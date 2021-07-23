@@ -1,18 +1,20 @@
 import itertools
 import numpy as np
+import tqdm
 
-class MM2PS:
+class MMkPS:
     """
     A class to hold the queueing network object
     """
-
-    def __init__(self, L, m, limit=30):
+    def __init__(self, L, m, k, limit=30):
         """
         Initialises the Network object
         """
         self.L = L
         self.m = m
-        self.State_Space = list(itertools.product(range(limit), range(limit)))
+        self.k = k
+        self.State_Space = list(itertools.product(*[range(limit) for _ in range(self.k)]))
+        self.lenmat = len(self.State_Space)
         self.write_transition_matrix()
         self.discretise_transition_matrix()
 
@@ -20,48 +22,42 @@ class MM2PS:
         """
         Finds the transition rates for given state transition
         """
-        delta = (state2[0] - state1[0], state2[1] - state1[1])
-        if delta == (1, 0):
-            # This is an arrival to the first node. Only arrive here if second node is as busy or busier than it
-            if state1[1] >= state1[0]:
-                return self.L
-        if delta == (0, 1):
-            # This is an arrival at the 2nd node. Only arrive here is first not is busier than it
-            if state1[0] > state1[1]:
-                return self.L
-        if delta == (-1, 0):
-            # This is an exit from the first node.
-            return self.m
-        if delta == (0, -1):
-            # This is an exit from the 2nd node.
-            return self.m
+        delta = tuple(state2[i] - state1[i] for i in range(self.k))
+        if delta.count(0) == self.k - 1:
+            if delta.count(-1) == 1:
+                return self.m
+            elif delta.count(1) == 1:
+                arriving_node = delta.index(1)
+                min_custs = min(state1)
+                if arriving_node == state1.index(min_custs):
+                    return self.L
         return 0.0
 
     def write_transition_matrix(self):
         """
         Writes the transition matrix for the markov chain
         """
-        self.transition_matrix = [[self.find_transition_rates(s1, s2) for s2 in self.State_Space] for s1 in self.State_Space]
-        for i in range(len(self.transition_matrix)):
-            a = sum(self.transition_matrix[i])
-            self.transition_matrix[i][i] = -a
-            self.transition_matrix = np.array(self.transition_matrix)
+        transition_matrix = np.array([[self.find_transition_rates(s1, s2) for s2 in self.State_Space] for s1 in self.State_Space])
+        row_sums = np.sum(transition_matrix, axis=1)
+        self.time_step = 1 / np.max(row_sums)
+        self.transition_matrix = transition_matrix - np.multiply(np.identity(self.lenmat), row_sums)
 
     def discretise_transition_matrix(self):
         """
         Disctetises the transition matrix
         """
-        self.time_step = 1 / max([abs(self.transition_matrix[i][i]) for i in range(len(self.transition_matrix))])
-        self.discrete_transition_matrix = self.transition_matrix*self.time_step + np.identity(len(self.transition_matrix))
+        self.discrete_transition_matrix = self.transition_matrix*self.time_step + np.identity(self.lenmat)
 
     def solve(self):
-        lenmat = len(self.State_Space)
-        A=np.append(np.transpose(self.discrete_transition_matrix)-np.identity(lenmat),[[1 for _ in range(lenmat)]], axis=0)
-        b=np.transpose(np.array([0 for _ in range(lenmat)]+[1]))
+        A = np.append(np.transpose(self.discrete_transition_matrix) - np.identity(self.lenmat), [[1 for _ in range(self.lenmat)]], axis=0)
+        b = np.transpose(np.array([0 for _ in range(self.lenmat)] + [1]))
         sol = np.linalg.solve(np.transpose(A).dot(A), np.transpose(A).dot(b))
-        self.probs =  {self.State_Space[i]: sol[i] for i in range(lenmat)}
+        self.probs =  {self.State_Space[i]: sol[i] for i in range(self.lenmat)}
 
     def aggregate_states(self):
+        """
+        Aggregates from individual states to 
+        """
         agg_probs = {}
         for state in self.probs.keys():
             agg_state = sum(state)
