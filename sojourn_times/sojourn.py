@@ -49,8 +49,8 @@ class MM1PS:
         lamb, mu = self.lambda_, self.mu
         rho = lamb / mu
 
-        return sum([(1-rho)*rho**n * sum([
-                        (lamb+mu)**k / fac(k) * exp(-(lamb+mu)) * self.h(n,k)\
+        return sum([(1 - rho) * (rho**n) * sum([
+                        ((((lamb + mu)**k) * (x**k)) / fac(k)) * exp(-(lamb + mu) * x) * self.h(n,k)\
                         for k in range(self.infty)])
                    for n in range(self.infty)])
     
