@@ -21,24 +21,27 @@ class MM1PS:
         self.mu = mu
         self.lambda_ = lambda_
         self.infty = infty
-
-
+        self.rho = lambda_ / mu
+        self.fac_ks = {k: fac(k) for k in range(infty)}
+        self.hs = {}
 
     def h(self, n, k):
         """
         Derive h_{n,k}. See the expression in Corollary 2 of [1]
         """
-        lamb, mu = self.lambda_, self.mu
-
         if k <= 0:
             return 1
         if n == -1:
             return 0
         if n >= self.infty:
             return 1
+        if (n, k) in self.hs:
+            return self.hs[(n, k)]
 
-        return n/(n+1) * mu/(lamb+mu) * self.h(n-1,k-1) +\
-               lamb/(lamb+mu) * self.h(n+1,k-1)
+        h =  ((n / (n + 1)) * (self.mu / (self.lambda_ + self.mu)) * self.hs.get((n-1, k-1), self.h(n-1, k-1))) +\
+               ((self.lambda_ / (self.lambda_ + self.mu)) * self.h(n+1, k-1))
+        self.hs[(n, k)] = h
+        return h
 
 
     def W(self, x):
@@ -46,11 +49,8 @@ class MM1PS:
         Derive Pr[W>x], that is, the probability that the sojourn time of a
         user is >x
         """
-        lamb, mu = self.lambda_, self.mu
-        rho = lamb / mu
-
-        return sum([(1 - rho) * (rho**n) * sum([
-                        ((((lamb + mu)**k) * (x**k)) / fac(k)) * exp(-(lamb + mu) * x) * self.h(n,k)\
+        return sum([(1 - self.rho) * (self.rho**n) * sum([
+                        ((((self.lambda_ + self.mu)**k) * (x**k)) / self.fac_ks[k]) * exp(-(self.lambda_ + self.mu) * x) * self.h(n, k)\
                         for k in range(self.infty)])
                    for n in range(self.infty)])
     
