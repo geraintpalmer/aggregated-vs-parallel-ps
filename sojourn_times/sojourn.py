@@ -38,10 +38,17 @@ class MM1PS:
         if (n, k) in self.hs:
             return self.hs[(n, k)]
 
-        h =  ((n / (n + 1)) * (self.mu / (self.lambda_ + self.mu)) * self.hs.get((n-1, k-1), self.h(n-1, k-1))) +\
+        h =  ((n / (n + 1)) * (self.mu / (self.lambda_ + self.mu)) * self.h(n-1, k-1)) +\
                ((self.lambda_ / (self.lambda_ + self.mu)) * self.h(n+1, k-1))
         self.hs[(n, k)] = h
         return h
+
+    def wn(self, x, n):
+        """
+        Derive Pr[W>x|n] where n is the number of customers in the system upon arrival
+        """
+        return sum([((((self.lambda_ + self.mu)**k) * (x**k)) / self.fac_ks[k]) * exp(-(self.lambda_ + self.mu) * x) * self.h(n, k) for k in range(self.infty)])
+
 
 
     def W(self, x):
@@ -49,10 +56,7 @@ class MM1PS:
         Derive Pr[W>x], that is, the probability that the sojourn time of a
         user is >x
         """
-        return sum([(1 - self.rho) * (self.rho**n) * sum([
-                        ((((self.lambda_ + self.mu)**k) * (x**k)) / self.fac_ks[k]) * exp(-(self.lambda_ + self.mu) * x) * self.h(n, k)\
-                        for k in range(self.infty)])
-                   for n in range(self.infty)])
+        return sum([(1 - self.rho) * (self.rho**n) * self.wn(x, n) for n in range(self.infty)])
     
 
 
