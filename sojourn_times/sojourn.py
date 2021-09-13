@@ -1,6 +1,12 @@
 from math import factorial as fac
 from math import exp
+from functools import reduce
 import numpy as np
+
+
+
+def mul(a,b):
+    return a*b
 
 
 class MM1PS:
@@ -24,6 +30,7 @@ class MM1PS:
         self.rho = lambda_ / mu
         self.fac_ks = {k: fac(k) for k in range(infty)}
         self.hs = {}
+
 
     def h(self, n, k):
         """
@@ -61,6 +68,11 @@ class MM1PS:
 
 
 
+
+
+
+
+
 class MMKJSQPS:
     """
     This class implements the logic proposed in [2] for an M/M/K/JSQ/PS system.
@@ -83,6 +95,8 @@ class MMKJSQPS:
         self.rho = lambda_ / (K*mu)
         self.fac_ks = {k: fac(k) for k in range(infty)}
         self.hs = {}
+        self.hs_bad = {}
+        self.pi0 = None
 
 
     def lamb(self, n):
@@ -123,6 +137,65 @@ class MMKJSQPS:
         return rho**K * mu # (7) from [2]
  
 
+    def h_bad(self, n, k):
+        """
+        Derive h_{n,k}. See the expression in Corollary 2 of [1]
+        [1st approx - DEPRECATED]
+        """
+        lamb_ = max([self.lamb(i) for i in range(self.infty)])
+
+        if k <= 0:
+            return 1
+        if n == -1:
+            return 0
+        if n >= self.infty:
+            return 1
+        if (n, k) in self.hs_bad:
+            return self.hs_bad[(n, k)]
+
+        h =  ((n / (n + 1)) * (self.mu / (lamb_ + self.mu)) * self.h(n-1, k-1)) +\
+               ((self.lamb(n) / (lamb_ + self.mu)) * self.h(n+1, k-1))
+        self.hs_bad[(n, k)] = h
+        return h
+
+
+    def wn_bad(self, x, n):
+        """
+        Derive Pr[W>x|n] where n is the number of customers in the system upon arrival
+        [1st approx - DEPRECATED]
+        """
+        return sum([((((self.lambda_ + self.mu)**k) * (x**k)) / self.fac_ks[k])
+            * exp(-(self.lambda_ + self.mu) * x) * self.h_bad(n, k) for k in range(self.infty)])
+
+
+
+    def W_bad(self, x):
+        """
+        Derive Pr[W>x], that is, the probability that the sojourn time of a
+        user is >x
+        [1st approx - DEPRECATED]
+        """
+        return sum([(1 - self.rho) * (self.rho**n) * self.wn_bad(x, n) for n in range(self.infty)])
+    
+
+
+
+
+    def pi(self, n):
+        """
+        π_n: probability of having n users in the system
+        """
+        if not self.pi0:
+            self.pi0 = (1+sum([1/self.mu**n_ *\
+                            reduce(mul, [self.lamb(i) for i in range(n_)])\
+                        for n_ in range(1, self.infty)]) )**(-1)
+        
+        if n == 0:
+            return self.pi0
+
+        return self.pi0 / self.mu**n * reduce(mul, [self.lamb(i) for i in range(n)])
+
+
     def h(self, n, k):
         """
         Derive h_{n,k}. See the expression in Corollary 2 of [1]
@@ -139,15 +212,20 @@ class MMKJSQPS:
             return self.hs[(n, k)]
 
         h =  ((n / (n + 1)) * (self.mu / (lamb_ + self.mu)) * self.h(n-1, k-1)) +\
-               ((self.lamb(n) / (lamb_ + self.mu)) * self.h(n+1, k-1))
+             1/(lamb_+self.mu) * (lamb_ - self.lamb(n)) * self.h(n,k-1) +\
+               ((self.lamb(n+1) / (lamb_ + self.mu)) * self.h(n+1, k-1))
         self.hs[(n, k)] = h
         return h
+
 
     def wn(self, x, n):
         """
         Derive Pr[W>x|n] where n is the number of customers in the system upon arrival
         """
-        return sum([((((self.lambda_ + self.mu)**k) * (x**k)) / self.fac_ks[k]) * exp(-(self.lambda_ + self.mu) * x) * self.h(n, k) for k in range(self.infty)])
+        lamb_ = max([self.lamb(i) for i in range(self.infty)])
+
+        return sum([((((lamb_ + self.mu)**k) * (x**k)) / self.fac_ks[k])
+            * exp(-(lamb_ + self.mu) * x) * self.h(n, k) for k in range(self.infty)])
 
 
 
@@ -156,6 +234,4 @@ class MMKJSQPS:
         Derive Pr[W>x], that is, the probability that the sojourn time of a
         user is >x
         """
-        return sum([(1 - self.rho) * (self.rho**n) * self.wn(x, n) for n in range(self.infty)])
-    
-
+        return sum([self.pi(n) * self.wn(x, n) for n in range(self.infty)])
