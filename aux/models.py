@@ -393,3 +393,8 @@ class MMRPS_aggregate:
             probs[state] = self.p(state)
         self.probs = probs
 
+
+def wasserstein_distance(U, V, gap):
+    diffs = [abs(u - v) for u, v in zip(U, V)]
+    return sum(diffs) * gap
+

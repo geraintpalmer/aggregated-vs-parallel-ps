@@ -7,7 +7,7 @@ class Simulation:
     This class derives the sojourn time cdf for a JSQ-PS vis simulation.
     The simulation methodology is via Ciw (v.2.2.0).
     """
-    def __init__(self, lambda_, mu, R, max_time, warmup):
+    def __init__(self, lambda_, mu, R, max_time, warmup, tracker=ciw.trackers.StateTracker()):
         """
         Parameters:
           mu: the service rate
@@ -22,6 +22,7 @@ class Simulation:
         self.R = R
         self.max_time = max_time
         self.warmup = warmup
+        self.tracker = tracker
         self.N = ciw.create_network(
             arrival_distributions=[
                 ciw.dists.Exponential(self.lambda_)] + [
@@ -39,11 +40,12 @@ class Simulation:
         seed: the seed to set the random number stream
         """
         ciw.seed(seed)
-        Q = ciw.Simulation(
+        self.Q = ciw.Simulation(
             self.N, node_class=[
-            self.RoutingDecision] + [ciw.PSNode for _ in range(self.R)])
-        Q.simulate_until_max_time(self.max_time, progress_bar=True)
-        self.recs = Q.get_all_records()
+            self.RoutingDecision] + [ciw.PSNode for _ in range(self.R)],
+            tracker=self.tracker)
+        self.Q.simulate_until_max_time(self.max_time, progress_bar=True)
+        self.recs = self.Q.get_all_records()
         self.recs = [
             r for r in self.recs if (r.arrival_date > self.warmup) and
             (r.arrival_date < self.max_time - self.warmup) and (r.node != 1)]
