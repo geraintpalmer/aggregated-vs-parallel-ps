@@ -265,7 +265,7 @@ class MMKJSQPS:
 
         h =  ((n / (n + 1)) * (self.mu / (lamb_ + self.mu)) * self.h(n-1, k-1)) +\
              1/(lamb_+self.mu) * (lamb_ - self.lamb(n)) * self.h(n,k-1) +\
-               ((self.lamb(n+1) / (lamb_ + self.mu)) * self.h(n+1, k-1))
+               ((self.lamb(n) / (lamb_ + self.mu)) * self.h(n+1, k-1))
         self.hs[(n, k)] = h
         return h
 
