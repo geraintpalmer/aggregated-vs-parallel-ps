@@ -1,3 +1,4 @@
+import time
 import sys
 import os
 sys.path.append("..")
@@ -27,14 +28,14 @@ if __name__ == '__main__':
     parser.add_argument('config', help='JSON file w/ simulation config')
     args = parser.parse_args()
 
-    with open(args['config']) as f:
+    with open(args.config) as f:
         cfg = json.load(f)
 
 
     # we assume μ=1, so λ=ρ
     mu = 1
     lambdas = [cfg['rho_min']]
-    while lambdas[-1] <= cfg['rho_max']:
+    while lambdas[-1] < cfg['rho_max']:
         lambdas.append( lambdas[-1] + cfg['rho_step'] )
 
 
@@ -45,19 +46,29 @@ if __name__ == '__main__':
     if cfg['method'] == 'simulation':
         for R in range(cfg['R_min'], cfg['R_max']+1):
             for lambda_ in lambdas:
+                run_times = []
                 for _ in range(cfg['repetitions']):
                     # Store the simulation in parquet
-                    path = f'sweep/simulation/R={R}-rho={rho}'
-                    os.mkdir(path)
+                    path = f'sweep/simulation/R={R}-rho={lambda_}'
                     file_path = path + f'/sim{_}.pq'
+                    try:
+                        os.mkdir(path)
+                    except FileExistsError:
+                        pass
 
                     print(f'simulating {file_path}')
                     S = jsq.Simulation(lambda_, mu, R, cfg['max_time'],
                                        cfg['warmup'], ps_bar=False)
+                    tic = time.time()
                     S.run(0)
+                    run_times.append( time.time() - tic )
 
                     print(f'storing simulation at {file_path}')
                     pd.DataFrame( S.recs ).to_parquet(file_path)
+
+                file_path = path + '/' + path.split('/')[-1] + '-runtimes.csv'
+                pd.DataFrame({'simulation': list(range(len(run_times))),
+                              'run_time': run_times}).to_csv(file_path)
             
 
     else:
@@ -66,10 +77,10 @@ if __name__ == '__main__':
                 if cfg['method'] == 'method1':
                     file_path = f'sweep/method1/'
                     file_path += f'mc_limit={cfg["mc_limit"]}-'
-                    file_path += f'infty={cfg["infty"]}-R={R}-rho={rho}.csv'
+                    file_path += f'infty={cfg["infty"]}-R={R}-rho={lambda_}.csv'
                 elif cfg['method'] == 'method2':
                     file_path = f'sweep/method2/'
-                    file_path += f'infty={cfg["infty"]}-R={R}-rho={rho}.csv'
+                    file_path += f'infty={cfg["infty"]}-R={R}-rho={lambda_}.csv'
 
 
                 print(f"computing {file_path}")
@@ -83,11 +94,23 @@ if __name__ == '__main__':
                 times += [i for i in range(50, 100, 5)]   # W=[50,100]
                 times += [i for i in range(100, int(cfg['sojourn_max'])+1,
                                                      10)] # W=[50,W_max]
+                tic = time.time()
                 M.find_sojourn_time_cdf(times)
+                tac = time.time()
                 
 
                 print(f"storing {file_path}")
                 pd.DataFrame({'sojourn_time': times,
                     'cdf': M.sojourn_time_cdf}).to_csv(file_path)
+                time_path = '.'.join(file_path.split('.')[:-1]) + '-runtime.csv'
+                print(f"storing run-time {file_path}")
+                pd.DataFrame({'R': [R], 
+                              'rho': [lambda_],
+                              'infty': [cfg['infty']],
+                              'mc_limit': [cfg['mc_limit']],
+                              'method': [cfg['method']],
+                              'runtime': [tac - tic],
+                             }).to_csv(time_path)
+
 
         

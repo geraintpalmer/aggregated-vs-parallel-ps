@@ -1,0 +1,17 @@
+{
+    "R_min": 1,
+    "R_max": 5,
+    "R_step": 1,
+    "method": "simulation",
+    "comment1": "method = {simulation|method1|method2}",
+    "repetitions": 40,
+    "warmup": 200,
+    "max_time": 4000,
+    "mc_limit": 8,
+    "infty": 130,
+    "rho_min": 0.01,
+    "rho_max": 0.99,
+    "rho_step": 0.01,
+    "sojourn_max": 182.32,
+    "comment2": "sojourn_max is derived for R=1 and rho=0.99"
+}
