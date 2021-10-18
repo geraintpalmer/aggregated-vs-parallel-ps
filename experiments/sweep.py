@@ -36,8 +36,14 @@ if __name__ == '__main__':
     mu = 1
     lambdas = [cfg['rho_min']]
     while lambdas[-1] < cfg['rho_max']:
-        lambdas.append( lambdas[-1] + cfg['rho_step'] )
+        lambdas.append( round(lambdas[-1] + cfg['rho_step'], 4) )
 
+    # create times
+    times = []
+    t = 0.0
+    while t <= cfg['sojourn_max']:
+        times.append(t)
+        times += 0.01
 
 
     ################
@@ -61,10 +67,12 @@ if __name__ == '__main__':
                                        cfg['warmup'], ps_bar=False)
                     tic = time.time()
                     S.run(0)
+                    S.find_sojourn_time_cdf(times)
                     run_times.append( time.time() - tic )
 
-                    print(f'storing simulation at {file_path}')
-                    pd.DataFrame( S.recs ).to_parquet(file_path)
+                    print(f'storing simulation cdf at {file_path}')
+                    pd.DataFrame({'sojourn_time': times,
+                        'cdf': S.sojourn_time_cdf}).to_csv(file_path)
 
                 file_path = path + '/' + path.split('/')[-1] + '-runtimes.csv'
                 pd.DataFrame({'simulation': list(range(len(run_times))),
@@ -84,19 +92,17 @@ if __name__ == '__main__':
 
 
                 print(f"computing {file_path}")
-                M = jsq.Method1(lambda_, mu, R, cfg['mc_limit'], cfg['infty'])\
-                        if cfg['method'] == 'method1' else\
-                    jsq.Method2(lambda_, mu, R, cfg['infty'])
 
-                # Define times, note μ=1 is avg. service time
-                times = [i/10 for i in range(100)]        # W=[1,10)
-                times += [i for i in range(10, 50)]       # W=[10,50)
-                times += [i for i in range(50, 100, 5)]   # W=[50,100]
-                times += [i for i in range(100, int(cfg['sojourn_max'])+1,
-                                                     10)] # W=[50,W_max]
-                tic = time.time()
-                M.find_sojourn_time_cdf(times)
-                tac = time.time()
+                if cfg['method'] == 'method1':
+                    tic = time.time()
+                    M = jsq.Method1(lambda_, mu, R, cfg['mc_limit'], cfg['infty'])
+                    M.find_sojourn_time_cdf(times)
+                    tac = time.time()
+                else:
+                    tic = time.time()
+                    M = jsq.Method2(lambda_, mu, R, cfg['infty'])
+                    M.find_sojourn_time_cdf(times)
+                    tac = time.time()
                 
 
                 print(f"storing {file_path}")
