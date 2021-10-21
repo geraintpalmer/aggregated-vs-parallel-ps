@@ -84,7 +84,7 @@ class Method1:
     This combines:
         + Conditional sojourn times for a single PS queue
           from (Masuyama and Takine, 2003)
-        + Exact inter-queue dyanmics from a Markov chain
+        + Exact inter-queue dynamics from a Markov chain
 
     We can define a Markov chain of the system explicitly:
         + States of the markov chain take the form $(a_1, a_2, ..., a_R)$,
@@ -110,7 +110,7 @@ class Method1:
     Now the arriving customer is essentially arriving to an M/M/1-PS system in
     state $n$:
         + It has the same intended service times with mean $mu$.
-        + However it now has state-dependant arrivals. When in state $n$ is
+        + However it now has state-dependant arrivals. When in state $n$ it
           receives all customers if the other servers have more customers than
           it (rate $Lambda$); $1/c$ of the customers if there are $c$ servers
           with the same number of customers as it and all others have more than
@@ -172,12 +172,12 @@ class Method1:
             pn = 0
             pnarr = 0
             for state in self.markov_chain.probs:
-                if n in state:
+                if state[0] == n:
                     pn += self.markov_chain.probs[state]
-                    if min(state) == n and state[0] == n:
+                    if min(state) == n:
                         c = state.count(n)
                         pnarr += self.markov_chain.probs[state] / c
-            if (pn > self.zero) and (pnarr > self.zero) and (pn/pnarr > self.zero):
+            if (pn > self.zero) and (pnarr > self.zero) and (pnarr / pn > self.zero):
                 self.props.append(pnarr / pn)
             else:
                 self.props.append(0)
