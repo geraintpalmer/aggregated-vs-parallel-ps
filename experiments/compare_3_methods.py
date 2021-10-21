@@ -42,7 +42,7 @@ gap = times[1] - times[0]
 
 # rhos = np.linspace(0.05, 0.95, 19)
 rhos = np.linspace(0.05, 0.95, 19)
-mc_limits = range(5, 14)
+mc_limits = [6, 9, 12]
 w_expons = []
 w_M1s = []
 w_M2s = []
