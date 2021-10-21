@@ -31,10 +31,10 @@ def compare_all_three(rho, mc_limit, sim_cdf):
 
 
 R = 3
-max_time = 4000
-warmup = 200
+max_time = 25000
+warmup = 1000
 lambda_ = 10
-infty = 130
+infty = 135
 num_repetitions = 20
 times = np.linspace(0, 1.25, 40)
 gap = times[1] - times[0]
