@@ -42,18 +42,18 @@ gap = times[1] - times[0]
 
 # rhos = np.linspace(0.05, 0.95, 19)
 rhos = np.linspace(0.05, 0.95, 19)
-mc_limits = range(2, 14)
+mc_limits = range(5, 14)
 w_expons = []
 w_M1s = []
 w_M2s = []
 rhos_df = []
 mc_limit_df = []
 for rho in tqdm.tqdm(rhos):
+    mu = lambda_ / (rho * R)
+    S = jsq.Simulation(lambda_, mu, 3, max_time, warmup, ps_bar=False)
+    S.run(0)
+    S.find_sojourn_time_cdf(times)
     for mc_limit in tqdm.tqdm(mc_limits):
-        mu = lambda_ / (rho * R)
-        S = jsq.Simulation(lambda_, mu, 3, max_time, warmup, ps_bar=False)
-        S.run(0)
-        S.find_sojourn_time_cdf(times)
         w_expon, w_M1, w_M2 = compare_all_three(rho, mc_limit, S.sojourn_time_cdf)
         w_expons.append(w_expon)
         w_M1s.append(w_M1)
