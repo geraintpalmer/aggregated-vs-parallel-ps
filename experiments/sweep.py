@@ -43,7 +43,7 @@ if __name__ == '__main__':
     t = 0.0
     while t <= cfg['sojourn_max']:
         times.append(t)
-        times += 0.01
+        t += 0.01
 
 
     ################
@@ -81,10 +81,12 @@ if __name__ == '__main__':
 
     else:
         for R in range(cfg['R_min'], cfg['R_max']+1):
+            mc_limit = cfg['mc_limit'][str(R)]
+
             for lambda_ in lambdas:
                 if cfg['method'] == 'method1':
                     file_path = f'sweep/method1/'
-                    file_path += f'mc_limit={cfg["mc_limit"]}-'
+                    file_path += f'mc_limit={mc_limit}-'
                     file_path += f'infty={cfg["infty"]}-R={R}-rho={lambda_}.csv'
                 elif cfg['method'] == 'method2':
                     file_path = f'sweep/method2/'
@@ -95,7 +97,7 @@ if __name__ == '__main__':
 
                 if cfg['method'] == 'method1':
                     tic = time.time()
-                    M = jsq.Method1(lambda_, mu, R, cfg['mc_limit'], cfg['infty'])
+                    M = jsq.Method1(lambda_, mu, R, mc_limit, cfg['infty'])
                     M.find_sojourn_time_cdf(times)
                     tac = time.time()
                 else:
@@ -113,7 +115,7 @@ if __name__ == '__main__':
                 pd.DataFrame({'R': [R], 
                               'rho': [lambda_],
                               'infty': [cfg['infty']],
-                              'mc_limit': [cfg['mc_limit']],
+                              'mc_limit': [mc_limit],
                               'method': [cfg['method']],
                               'runtime': [tac - tic],
                              }).to_csv(time_path)

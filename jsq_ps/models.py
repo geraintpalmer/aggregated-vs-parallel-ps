@@ -54,12 +54,18 @@ class Simulation:
     def find_sojourn_time_cdf(self, times):
         """
         Finds the sojourn time cdf
-        times: a list of time points
+        times: a list of increasing time points, e.g.: [1,2,3,...]
         """
         sojourn_times = [r.service_time for r in self.recs]
-        self.sojourn_time_cdf = [(
-            scipy.stats.percentileofscore(
-            sojourn_times, t, kind='strict')) / 100 for t in times]
+        self.sojourn_time_cdf = [0]
+        for t in times:
+            if self.sojourn_time_cdf[-1] < 1:
+                per = scipy.stats.percentileofscore(
+                        sojourn_times, t, kind='strict')) / 100
+                self.sojourn_time_cdf.append( per )
+            else:
+                self.sojourn_time_cdf.append( 1 )
+        del self.sojourn_time_cdf[0]
 
     class RoutingDecision(ciw.Node):
         def next_node(self, ind):
@@ -185,13 +191,22 @@ class Method1:
     def find_sojourn_time_cdf(self, times):
         """
         Finds the sojourn time cdf
-        times: a list of time points
+        times: a list of increasing time points, e.g.: [1,2,3,...]
         """
         self.S = aux.MM1PS_varying_lambda(
             mu=self.mu, lambda_ns=self.lambda_ns, infty=self.infty)
-        self.sojourn_time_cdf = [max(self.zero, 1 - sum(
-            [self.S.wn(t, n) * self.n_probs[n] for n in self.n_probs.keys()]
-            )) for t in times]
+
+        self.sojourn_time_cdf = [0]
+        for t in times:
+            if self.sojourn_time_cdf[-1] < 1:
+                per = max(self.zero, 1 - sum(
+                        [self.S.wn(t, n) * self.n_probs[n]\
+                            for n in self.n_probs.keys()]))
+                self.sojourn_time_cdf.append( per )
+            else:
+                self.sojourn_time_cdf.append( 1 )
+        del self.sojourn_time_cdf[0]
+
 
 
 
@@ -226,6 +241,14 @@ class Method2:
     def find_sojourn_time_cdf(self, times):
         """
         Finds the sojourn time cdf
-        times: a list of time points
+        times: a list of increasing time points, e.g.: [1,2,3,...]
         """
-        self.sojourn_time_cdf = [1.0 - self.M.W(t) for t in times]
+        self.sojourn_time_cdf = [0]
+        for t in times:
+            if self.sojourn_time_cdf[-1] < 1:
+                per = 1.0 - self.M.W(t)
+                self.sojourn_time_cdf.append( per )
+            else:
+                self.sojourn_time_cdf.append( 1 )
+        del self.sojourn_time_cdf[0]
+
