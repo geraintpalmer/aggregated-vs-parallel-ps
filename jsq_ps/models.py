@@ -61,7 +61,7 @@ class Simulation:
         for t in times:
             if self.sojourn_time_cdf[-1] < 1:
                 per = scipy.stats.percentileofscore(
-                        sojourn_times, t, kind='strict')) / 100
+                        sojourn_times, t, kind='strict') / 100
                 self.sojourn_time_cdf.append( per )
             else:
                 self.sojourn_time_cdf.append( 1 )
