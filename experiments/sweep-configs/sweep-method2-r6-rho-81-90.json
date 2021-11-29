@@ -21,8 +21,8 @@
     },
     "comment2": "mc_limit: for R what's the mc_limit s.t. mc_lim**(2R)<=10e10",
     "infty": 130,
-    "rho_min": 0.01,
-    "rho_max": 0.99,
+    "rho_min": 0.81,
+    "rho_max": 0.90,
     "rho_step": 0.01,
     "sojourn_max": 182.32,
     "comment3": "sojourn_max is derived for R=1 and rho=0.99"
