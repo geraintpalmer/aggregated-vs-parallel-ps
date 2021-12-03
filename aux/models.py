@@ -159,6 +159,8 @@ class MMKJSQPS:
         self.hs = {}
         self.hs_bad = {}
         self.pi0 = None
+        self.lamb_n = {n: self.lamb(n) for n in range(infty)}
+        self.lamb_max = max(self.lamb_n.values())
 
     def lamb(self, n):
         """
@@ -202,8 +204,6 @@ class MMKJSQPS:
         Derive h_{n,k}. See the expression in Corollary 2 of [1]
         [1st approx - DEPRECATED]
         """
-        lamb_ = max([self.lamb(i) for i in range(self.infty)])
-
         if k <= 0:
             return 1
         if n == -1:
@@ -213,8 +213,8 @@ class MMKJSQPS:
         if (n, k) in self.hs_bad:
             return self.hs_bad[(n, k)]
 
-        h =  ((n / (n + 1)) * (self.mu / (lamb_ + self.mu)) * self.h(n-1, k-1)) +\
-               ((self.lamb(n) / (lamb_ + self.mu)) * self.h(n+1, k-1))
+        h =  ((n / (n + 1)) * (self.mu / (self.lamb_max + self.mu)) * self.h_bad(n-1, k-1)) +\
+               ((self.lamb_n[n] / (self.lamb_max + self.mu)) * self.h_bad(n+1, k-1))
         self.hs_bad[(n, k)] = h
         return h
 
@@ -240,20 +240,18 @@ class MMKJSQPS:
         """
         if not self.pi0:
             self.pi0 = (1+sum([1/self.mu**n_ *\
-                            reduce(mul, [self.lamb(i) for i in range(n_)])\
+                            reduce(mul, [self.lamb_n[i] for i in range(n_)])\
                         for n_ in range(1, self.infty)]) )**(-1)
         
         if n == 0:
             return self.pi0
 
-        return self.pi0 / self.mu**n * reduce(mul, [self.lamb(i) for i in range(n)])
+        return self.pi0 / self.mu**n * reduce(mul, [self.lamb_n[i] for i in range(n)])
 
     def h(self, n, k):
         """
         Derive h_{n,k}. See the expression in Corollary 2 of [1]
         """
-        lamb_ = max([self.lamb(i) for i in range(self.infty)])
-
         if k <= 0:
             return 1
         if n == -1:
@@ -263,9 +261,9 @@ class MMKJSQPS:
         if (n, k) in self.hs:
             return self.hs[(n, k)]
 
-        h =  ((n / (n + 1)) * (self.mu / (lamb_ + self.mu)) * self.h(n-1, k-1)) +\
-             1/(lamb_+self.mu) * (lamb_ - self.lamb(n)) * self.h(n,k-1) +\
-               ((self.lamb(n) / (lamb_ + self.mu)) * self.h(n+1, k-1))
+        h =  ((n / (n + 1)) * (self.mu / (self.lamb_max + self.mu)) * self.h(n-1, k-1)) +\
+             1/(self.lamb_max+self.mu) * (self.lamb_max - self.lamb_n[n]) * self.h(n,k-1) +\
+               ((self.lamb_n[n] / (self.lamb_max + self.mu)) * self.h(n+1, k-1))
         self.hs[(n, k)] = h
         return h
 
@@ -273,10 +271,8 @@ class MMKJSQPS:
         """
         Derive Pr[W>x|n] where n is the number of customers in the system upon arrival
         """
-        lamb_ = max([self.lamb(i) for i in range(self.infty)])
-
-        return sum([((((lamb_ + self.mu)**k) * (x**k)) / self.fac_ks[k])
-            * exp(-(lamb_ + self.mu) * x) * self.h(n, k) for k in range(self.infty)])
+        return sum([((((self.lamb_max + self.mu)**k) * (x**k)) / self.fac_ks[k])
+            * exp(-(self.lamb_max + self.mu) * x) * self.h(n, k) for k in range(self.infty)])
 
     def W(self, x):
         """
