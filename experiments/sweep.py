@@ -31,12 +31,15 @@ if __name__ == '__main__':
     with open(args.config) as f:
         cfg = json.load(f)
 
-
-    # we assume μ=1, so λ=ρ
+    # Obtain the lambdas to iterate over depending on R
+    # 
+    # Note: the goal is to compare all by means of load ρ
+    # we assume μ=1, since ρ=λ/(cμ) we have  λ=ρ·c
     mu = 1
-    lambdas = [cfg['rho_min']]
-    while lambdas[-1] < cfg['rho_max']:
-        lambdas.append( round(lambdas[-1] + cfg['rho_step'], 4) )
+    lambdas_fn = lambda R: R*np.arange(cfg['rho_min'],
+                                cfg['rho_max']+cfg['rho_step'],
+                                cfg['rho_step'])
+
 
     # create times
     times = []
@@ -51,11 +54,12 @@ if __name__ == '__main__':
     ################
     if cfg['method'] == 'simulation':
         for R in range(cfg['R_min'], cfg['R_max']+1):
-            for lambda_ in lambdas:
+            for lambda_ in lambdas_fn(R):
+                rho = round(lambda_ / R, 2)
                 run_times = []
                 for _ in range(cfg['repetitions']):
                     # Store the simulation in parquet
-                    path = f'sweep/simulation/R={R}-rho={lambda_}'
+                    path = f'sweep/simulation/R={R}-rho={rho}'
                     file_path = path + f'/sim{_}.pq'
                     try:
                         os.mkdir(path)
@@ -66,13 +70,17 @@ if __name__ == '__main__':
                     S = jsq.Simulation(lambda_, mu, R, cfg['max_time'],
                                        cfg['warmup'], ps_bar=False)
                     tic = time.time()
-                    S.run(0)
+                    S.run(seed=tic)
                     S.find_sojourn_time_cdf(times)
                     run_times.append( time.time() - tic )
 
                     print(f'storing simulation cdf at {file_path}')
                     pd.DataFrame({'sojourn_time': times,
                         'cdf': S.sojourn_time_cdf}).to_csv(file_path)
+
+                    file_path = path + f'/sim{_}_recs.pq'
+                    print(f'storing simulation records at {file_path}')
+                    pd.DataFrame(S.recs).to_csv(file_path)
 
                 file_path = path + '/' + path.split('/')[-1] + '-runtimes.csv'
                 pd.DataFrame({'simulation': list(range(len(run_times))),
@@ -83,14 +91,15 @@ if __name__ == '__main__':
         for R in range(cfg['R_min'], cfg['R_max']+1):
             mc_limit = cfg['mc_limit'][str(R)]
 
-            for lambda_ in lambdas:
+            for lambda_ in lambdas_fn(R):
+                rho = round(lambda_ / R, 2)
                 if cfg['method'] == 'method1':
                     file_path = f'sweep/method1/'
                     file_path += f'mc_limit={mc_limit}-'
-                    file_path += f'infty={cfg["infty"]}-R={R}-rho={lambda_}.csv'
+                    file_path += f'infty={cfg["infty"]}-R={R}-rho={rho}.csv'
                 elif cfg['method'] == 'method2':
                     file_path = f'sweep/method2/'
-                    file_path += f'infty={cfg["infty"]}-R={R}-rho={lambda_}.csv'
+                    file_path += f'infty={cfg["infty"]}-R={R}-rho={rho}.csv'
 
 
                 print(f"computing {file_path}")
@@ -113,7 +122,7 @@ if __name__ == '__main__':
                 time_path = '.'.join(file_path.split('.')[:-1]) + '-runtime.csv'
                 print(f"storing run-time {file_path}")
                 pd.DataFrame({'R': [R], 
-                              'rho': [lambda_],
+                              'rho': [rho],
                               'infty': [cfg['infty']],
                               'mc_limit': [mc_limit],
                               'method': [cfg['method']],
