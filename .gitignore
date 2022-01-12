@@ -1,3 +1,6 @@
 *__pycache__*
 *.ipynb_checkpoints*
 *DS_Store
+
+# Ignore CIW records due to large size (>100M)
+experiments/sweep/simulation/*/*_recs.pq
