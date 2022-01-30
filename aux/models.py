@@ -173,7 +173,7 @@ class MMKJSQPS:
         mu = self.mu
         K = self.K
 
-        if n == 0: # use approx. (12) in [2]
+        if n == 0: 
             ap = rho / (1-rho)
             bp = (-.0263*rho**2+.0054*rho+.1155)/(rho**2-1.939*rho+.9534)
             cp = -6.2973*rho**4+14.3382*rho**3-12.3532*rho**2+6.2557*rho-1.005
@@ -181,8 +181,12 @@ class MMKJSQPS:
                  (rho**3-146.2751*rho**2-481.1256*rho+599.9166)
             ep = .4462*rho**3-1.8317*rho**2+2.4376*rho-.0512
 
-            return mu*(ap - bp*cp**K - dp*ep**K) # (11) in [2]
+            return mu*(ap - bp*cp**K - dp*ep**K) # (12) in [2]
         elif n == 1:
+            num = mu/self.lamb(0) * (rho-rho**(K+1))/(1-rho) + rho**K - 1
+            den = 1 + self.lamb(2)/mu - rho**K
+            return mu * num / den # (9) in [2]
+        elif n == 2:
             c3 = -.29
             c2 = .8822
             c1 = -.5349
@@ -194,7 +198,7 @@ class MMKJSQPS:
             up = c3*rho**3 + c2*rho**2 + c1*rho + c0
             vp = c2_*rho**2 + c1_*rho + c0_
 
-            return mu*(up*vp**K)
+            return mu*(up*vp**K) # (11) in [2]
 
         # n>=3
         return rho**K * mu # (7) from [2]
