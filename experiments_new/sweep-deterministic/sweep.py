@@ -16,7 +16,7 @@ def write_cdf(R, rho):
         times.append(t)
         t += 0.01
 
-    file_path = f"uniform-R={R}-rho={round(rho, 2)}.csv"
+    file_path = f"deterministic-R={R}-rho={round(rho, 2)}.csv"
     S = jsq.SimulationDeterministic(lambda_=rho * R, mu=1, R=R, max_time=160000, warmup=8000, ps_bar=False)
     S.run(0)
     S.find_sojourn_time_cdf(times)
