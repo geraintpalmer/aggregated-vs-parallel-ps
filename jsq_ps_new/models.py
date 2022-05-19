@@ -168,6 +168,88 @@ class SimulationUniform:
             return self.simulation.nodes[chosen_n]
 
 
+class SimulationDeterministic:
+    """
+    This class derives the sojourn time cdf for a JSQ-PS vis simulation.
+    The simulation methodology is via Ciw (v.2.2.0).
+    """
+    def __init__(self, lambda_, mu, R, max_time, warmup, tracker=ciw.trackers.StateTracker(), ps_bar=True):
+        """
+        Parameters:
+          mu: the service rate
+          lambda_: the external arrival rate
+          R: the number of parallel PS queues
+        Hyperparameters:
+          max_time: the amount of simulation time to run for
+          warmup: the amount of warmup and cooldown time to not collect results
+        """
+        self.lambda_ = lambda_
+        self.mu = mu
+        self.R = R
+        self.max_time = max_time
+        self.warmup = warmup
+        self.tracker = tracker
+        self.ps_bar = ps_bar
+        self.N = ciw.create_network(
+            arrival_distributions=[
+                ciw.dists.Exponential(self.lambda_)] + [
+                ciw.dists.NoArrivals() for _ in range(self.R)],
+            service_distributions=[
+                ciw.dists.Deterministic(0)] + [
+                ciw.dists.Deterministic(1 / self.mu) for _ in range(self.R)],
+            number_of_servers=[float('inf') for _ in range(self.R + 1)],
+            routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
+        )
+
+    def run(self, seed):
+        """
+        Runs the simulation.
+        seed: the seed to set the random number stream
+        """
+        ciw.seed(seed)
+        self.Q = ciw.Simulation(
+            self.N, node_class=[
+            self.RoutingDecision] + [ciw.PSNode for _ in range(self.R)],
+            tracker=self.tracker)
+        self.Q.simulate_until_max_time(self.max_time, progress_bar=self.ps_bar)
+        self.recs = self.Q.get_all_records()
+        self.recs = [
+            r for r in self.recs if (r.arrival_date > self.warmup) and
+            (r.arrival_date < self.max_time - self.warmup) and (r.node != 1)]
+
+    def find_sojourn_time_cdf(self, times):
+        """
+        Finds the sojourn time cdf
+        times: a list of increasing time points, e.g.: [1,2,3,...]
+        """
+        sojourn_times = [r.service_time for r in self.recs]
+        self.sojourn_time_cdf = [0]
+        for t in times:
+            if self.sojourn_time_cdf[-1] < 1:
+                per = scipy.stats.percentileofscore(
+                        sojourn_times, t, kind='strict') / 100
+                self.sojourn_time_cdf.append( per )
+            else:
+                self.sojourn_time_cdf.append( 1 )
+        del self.sojourn_time_cdf[0]
+
+    class RoutingDecision(ciw.Node):
+        def next_node(self, ind):
+            """
+            Finds the next node by looking at the other nodes,
+            seeing how busy they are, and routing to the least busy.
+            When there is a tie, choose randomly.
+            """
+            busyness = {n:
+                self.simulation.nodes[n].number_of_individuals for n in range(
+                    2, self.simulation.network.number_of_nodes + 1)}
+            least_busy = min(busyness.values())
+            chosen_n = ciw.random_choice(
+                [k for k in busyness.keys() if busyness[k] == least_busy])
+            return self.simulation.nodes[chosen_n]
+
+
+
 
 
 class MMk_JSQ_PS_mc:
