@@ -25,6 +25,6 @@ def write_cdf(R, rho):
 
 
 
-pool = multiprocessing.Pool(multiprocessing.cpu_count())
+pool = multiprocessing.Pool(12)
 args = [(R, rho) for R in Rs for rho in rhos]
 pool.starmap(write_cdf, args)
