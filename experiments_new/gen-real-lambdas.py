@@ -45,8 +45,9 @@ if __name__ == '__main__':
             (df_filtered['end_time'] <= args.to) ]
 
     print('Obtaining V2X lambda')
+    # Expressed in fps in the period of 5min.
     df_filtered['lambda_v2x'] =\
-        df_filtered['flow'] * args.frac_v2x * args.lambda_v2x
+        df_filtered['flow'] * args.frac_v2x * args.lambda_v2x / 12
 
     print('Dumping CSV to', args.out)
     df_filtered.to_csv(args.out, index=False)

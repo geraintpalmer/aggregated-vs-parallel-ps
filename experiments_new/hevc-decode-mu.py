@@ -21,4 +21,7 @@ def mu():
     # detecting signal on Intel Xeon [2] 0.37ms per frame
     cnn_time = (0.37*1e-3)
 
-    return 1 / (decoding_time + cnn_time)
+    return 1 / (decoding_time + cnn_time) # 113 frames/sec = \mu
+
+print( mu() )
+
