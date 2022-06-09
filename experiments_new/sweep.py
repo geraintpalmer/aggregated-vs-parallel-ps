@@ -102,7 +102,6 @@ if __name__ == '__main__':
 
                 print(f"computing {file_path}")
 
-                times = np.linspace(0, 6, 200)
                 if cfg['method'] == 'method1':
                     tic = time.process_time()
                     M = jsq.Method1(lambda_, mu, R, mc_limit, cfg['infty'])
