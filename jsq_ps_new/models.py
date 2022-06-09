@@ -268,7 +268,6 @@ class MMk_JSQ_PS_mc:
         self.State_Space = list(itertools.product(*[range(self.limit) for _ in range(self.k)]))
         self.lenmat = len(self.State_Space)
         self.write_transition_matrix()
-        self.discretise_transition_matrix()
         self.solve()
         self.find_proportion_of_n_gets_arrival()
 
@@ -298,16 +297,10 @@ class MMk_JSQ_PS_mc:
         self.time_step = 1 / np.max(row_sums)
         self.transition_matrix = transition_matrix - np.multiply(np.identity(self.lenmat), row_sums)
 
-    def discretise_transition_matrix(self):
-        """
-        Disctetises the transition matrix
-        """
-        self.discrete_transition_matrix = self.transition_matrix*self.time_step + np.identity(self.lenmat)
-
     def solve(self):
-        A = np.append(np.transpose(self.discrete_transition_matrix) - np.identity(self.lenmat), [[1 for _ in range(self.lenmat)]], axis=0)
-        b = np.transpose(np.array([0 for _ in range(self.lenmat)] + [1]))
-        sol = np.linalg.solve(np.transpose(A).dot(A), np.transpose(A).dot(b))
+        A = np.vstack((self.transition_matrix.transpose()[:-1], np.ones(self.lenma)))
+        b = np.vstack((np.zeros((self.lenma - 1, 1)), [1]))
+        sol = np.linalg.solve(A, b).transpose()[0]
         self.probs =  {self.State_Space[i]: sol[i] for i in range(self.lenmat)}
 
     def aggregate_states(self):
