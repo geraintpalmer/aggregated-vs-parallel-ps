@@ -298,8 +298,8 @@ class MMk_JSQ_PS_mc:
         self.transition_matrix = transition_matrix - np.multiply(np.identity(self.lenmat), row_sums)
 
     def solve(self):
-        A = np.vstack((self.transition_matrix.transpose()[:-1], np.ones(self.lenma)))
-        b = np.vstack((np.zeros((self.lenma - 1, 1)), [1]))
+        A = np.vstack((self.transition_matrix.transpose()[:-1], np.ones(self.lenmat)))
+        b = np.vstack((np.zeros((self.lenmat - 1, 1)), [1]))
         sol = np.linalg.solve(A, b).transpose()[0]
         self.probs =  {self.State_Space[i]: sol[i] for i in range(self.lenmat)}
 
