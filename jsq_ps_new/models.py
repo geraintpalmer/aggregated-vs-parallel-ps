@@ -530,11 +530,13 @@ class MethodA:
         # Find A_n
         self.M.find_probs_of_n_custs_on_arrival()
         self.Ans = self.M.n_probs
+        for i in range(self.limit, self.infty):
+            self.Ans[i] = self.Ans[self.limit-1]
 
         # Find sojourn times
         self.T = T_defective_mc(lambdas=self.lambda_ns, m=self.mu, k=self.R, infty=self.infty)
         self.T.wn(self.times)
-        self.sojourn_time_cdf = [1 - sum([self.Ans[n] * self.T.wns[n][i] for n in range(self.limit)]) for i, t in enumerate(self.times)]
+        self.sojourn_time_cdf = [1 - sum([self.Ans[n] * self.T.wns[n][i] for n in range(self.infty)]) for i, t in enumerate(self.times)]
 
 
 
@@ -568,7 +570,7 @@ class MethodB:
         # Find sojourn times
         self.T = T_defective_mc(lambdas=self.lambda_ns, m=self.mu, k=self.R, infty=self.infty)
         self.T.wn(self.times)
-        self.sojourn_time_cdf = [1 - sum([self.Ans[n] * self.T.wns[n][i] for n in range(self.limit)]) for i, t in enumerate(self.times)]
+        self.sojourn_time_cdf = [1 - sum([self.Ans[n] * self.T.wns[n][i] for n in range(self.infty)]) for i, t in enumerate(self.times)]
 
 
 
@@ -601,7 +603,7 @@ class MethodC:
         # Find sojourn times
         self.T = T_defective_mc(lambdas=self.lambda_ns, m=self.mu, k=self.R, infty=self.infty)
         self.T.wn(self.times)
-        self.sojourn_time_cdf = [1 - sum([self.Ans[n] * self.T.wns[n][i] for n in range(self.limit)]) for i, t in enumerate(self.times)]
+        self.sojourn_time_cdf = [1 - sum([self.Ans[n] * self.T.wns[n][i] for n in range(self.infty)]) for i, t in enumerate(self.times)]
 
 
 class MethodD:
