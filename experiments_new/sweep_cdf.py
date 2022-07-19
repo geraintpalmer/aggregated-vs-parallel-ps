@@ -3,6 +3,12 @@ import sys
 import os
 sys.path.append("..")
 import argparse
+
+import os
+os.environ["MKL_NUM_THREADS"] = "1" 
+os.environ["NUMEXPR_NUM_THREADS"] = "1" 
+os.environ["OMP_NUM_THREADS"] = "1" 
+
 import json
 import jsq_ps.models as jsq
 import jsq_ps_new.models as jsq_new
@@ -10,62 +16,6 @@ import pandas as pd
 import numpy as np
 import multiprocessing
 
-
-# sweep/
-#  | /method1
-#  |   mc_limit=?-R=?-rho=?.csv
-#  | /method2
-#  |   infty=?-R=?-rho=?.csv
-#  | /sim
-#  |   /R=?-rho=?
-#  |     sim0.pq
-#  |     sim1.pq
-#  |       ...
-#  |     sim39.pq
-
-
-
-
-
-    # ################
-    # ## SIMULATION ##
-    # ################
-    # if cfg['method'] == 'simulation':
-    #     for R in range(cfg['R_min'], cfg['R_max']+1):
-    #         for lambda_ in lambdas_fn(R):
-    #             rho = round(lambda_ / R, 2)
-    #             run_times = []
-    #             for _ in range(cfg['repetitions']):
-    #                 # Store the simulation in parquet
-    #                 path = f'sweep/simulation/R={R}-rho={rho}'
-    #                 file_path = path + f'/sim{_}.pq'
-    #                 try:
-    #                     os.mkdir(path)
-    #                 except FileExistsError:
-    #                     pass
-
-    #                 print(f'simulating {file_path}')
-    #                 S = jsq.Simulation(lambda_, mu, R, cfg['max_time'],
-    #                                    cfg['warmup'], ps_bar=False)
-    #                 tic = time.time()
-    #                 S.run(seed=tic)
-    #                 S.find_sojourn_time_cdf(times)
-    #                 run_times.append( time.time() - tic )
-
-    #                 print(f'storing simulation cdf at {file_path}')
-    #                 pd.DataFrame({'sojourn_time': times,
-    #                     'cdf': S.sojourn_time_cdf}).to_csv(file_path)
-
-    #                 file_path = path + f'/sim{_}_recs.pq'
-    #                 print(f'storing simulation records at {file_path}')
-    #                 pd.DataFrame(S.recs).to_csv(file_path)
-
-    #             file_path = path + '/' + path.split('/')[-1] + '-runtimes.csv'
-    #             pd.DataFrame({'simulation': list(range(len(run_times))),
-    #                           'run_time': run_times}).to_csv(file_path)
-            
-
-    # else:
 
 def get_cdf(R, lambda_, cfg):
     mc_limit = cfg['mc_limit'][str(R)]
@@ -156,8 +106,7 @@ if __name__ == '__main__':
         times.append(t)
         t += 0.01
 
-
+    
     pool = multiprocessing.Pool(n_cores)
-    func_arguments = [(R, lambda_, cfg) for R in reversed(range(Rmin, Rmax)) for lambda_ in lambdas_fn(R)]
-    average_waits = pool.starmap(get_cdf, func_arguments)
-
+    func_arguments = [(R, lambda_, cfg) for R in range(Rmin, Rmax) for lambda_ in lambdas_fn(R)]
+    pool.starmap(get_cdf, func_arguments)
