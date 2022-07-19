@@ -72,7 +72,7 @@ def get_cdf(R, lambda_, cfg):
     rho = round(lambda_ / R, 2)
 
     # Path to store, e.g., at sweep/methodA/
-    file_path = f'sweep-cdf/{cfg["method"]}/'
+    file_path = f'sweep/{cfg["method"]}/'
     file_path += f'mc_limit={mc_limit}-'
     file_path += f'infty={cfg["infty"]}-R={R}-rho={rho}.csv'
 
