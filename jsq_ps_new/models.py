@@ -457,7 +457,7 @@ class SojournTimeEquations:
         self.Ans = Ans
         tmp = len(Ans)
         if tmp < self.infty:
-            self.Ans = [Ans[i] for i in range(tmp)] + [Ans[tmp-1] for _ in range(self.infty - tmp)]
+            self.Ans = [Ans[i] for i in range(tmp)] + [0.0 for _ in range(self.infty - tmp)]
         self.hs = {}
         self.fac_ks = {k: np.math.factorial(k) for k in range(self.infty)}
 
@@ -531,7 +531,7 @@ class MethodA:
         self.M.find_probs_of_n_custs_on_arrival()
         self.Ans = self.M.n_probs
         for i in range(self.limit, self.infty):
-            self.Ans[i] = self.Ans[self.limit-1]
+            self.Ans[i] = self.Ans[0.0]
 
         # Find sojourn times
         self.T = T_defective_mc(lambdas=self.lambda_ns, m=self.mu, k=self.R, infty=self.infty)
@@ -595,6 +595,7 @@ class MethodC:
         # Find \lambda_n
         self.Approx = ArrivalRateApproximation(rho=self.lambda_/(self.R * self.mu), mu=self.mu, R=self.R, infty=self.infty)
         self.lambda_ns = self.Approx.lambda_ns
+
 
         # Find A_n
         self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(self.infty)]))
