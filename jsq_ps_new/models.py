@@ -288,13 +288,38 @@ class MMk_JSQ_PS_mc:
                     return self.L / num_arrival_nodes
         return 0.0
 
+    def get_all_pairs_of_non_zero_entries(self):
+        """
+        Returns a list of all pairs of states that have a possible non-zero rate
+        for the state probabilities markov chain.
+        """
+        all_pairs_indices = []
+        for index, state1 in enumerate(self.State_Space):
+            for i, s_i in enumerate(state1):
+                state_arrival, state_service = list(state1), list(state1)
+                if s_i < self.limit - 1:
+                    state_arrival[i] = s_i + 1
+                    next_state = tuple(state_arrival)
+                    all_pairs_indices.append((index, self.State_Space.index(next_state)))
+                if s_i > 0:
+                    state_service[i] = s_i - 1
+                    next_state = tuple(state_service)
+                    all_pairs_indices.append((index, self.State_Space.index(next_state)))
+        return all_pairs_indices
+
     def write_transition_matrix(self):
         """
         Writes the transition matrix for the markov chain
         """
-        transition_matrix = np.array([[self.find_transition_rates(s1, s2) for s2 in self.State_Space] for s1 in self.State_Space])
+        size_mat = len(self.State_Space)
+        transition_matrix = np.zeros((size_mat, size_mat))
+        all_pairs = self.get_all_pairs_of_non_zero_entries()
+        for s1, s2 in all_pairs:
+            transition_matrix[s1, s2] = self.find_transition_rates(
+                state1=self.State_Space[s1],
+                state2=self.State_Space[s2]
+            )
         row_sums = np.sum(transition_matrix, axis=1)
-        self.time_step = 1 / np.max(row_sums)
         self.transition_matrix = transition_matrix - np.multiply(np.identity(self.lenmat), row_sums)
 
     def solve(self):
@@ -366,6 +391,22 @@ class T_defective_mc:
         self.State_Space = list(range(infty))
         self.write_transition_matrix()
 
+    def get_all_pairs_of_non_zero_entries(self):
+        """
+        Returns a list of all pairs of states that have a possible non-zero rate
+        for the tefective markov chain.
+        """
+        all_pairs_indices = []
+        for index, state1 in enumerate(self.State_Space):
+            if state1 < self.infty - 1:
+                state_arrival = state1 + 1
+                all_pairs_indices.append((index, self.State_Space.index(state_arrival)))
+            if state1 > 0:
+                state_service = state1 - 1
+                all_pairs_indices.append((index, self.State_Space.index(state_service)))
+            all_pairs_indices.append((index, index))
+        return all_pairs_indices
+
     def find_transition_rates(self, state1, state2):
         """
         Finds the transition rates for given state transition
@@ -388,7 +429,14 @@ class T_defective_mc:
         """
         Writes the transition matrix for the markov chain
         """
-        self.transition_matrix = np.array([[self.find_transition_rates(s1, s2) for s2 in self.State_Space] for s1 in self.State_Space])
+        size_mat = len(self.State_Space)
+        self.transition_matrix = np.zeros((size_mat, size_mat))
+        all_pairs = self.get_all_pairs_of_non_zero_entries()
+        for s1, s2 in all_pairs:
+            self.transition_matrix[s1, s2] = self.find_transition_rates(
+                state1=self.State_Space[s1],
+                state2=self.State_Space[s2]
+            )
 
     def wn(self, times):
         """
