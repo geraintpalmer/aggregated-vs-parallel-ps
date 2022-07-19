@@ -531,7 +531,7 @@ class MethodA:
         self.M.find_probs_of_n_custs_on_arrival()
         self.Ans = self.M.n_probs
         for i in range(self.limit, self.infty):
-            self.Ans[i] = self.Ans[0.0]
+            self.Ans[i] = 0.0
 
         # Find sojourn times
         self.T = T_defective_mc(lambdas=self.lambda_ns, m=self.mu, k=self.R, infty=self.infty)
