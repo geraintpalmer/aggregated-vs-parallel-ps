@@ -564,7 +564,7 @@ class MethodB:
         self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-2]] + [self.lambda_ * self.M.props[-2] for _ in range(self.infty - self.limit + 2)]
 
         # Find A_n
-        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(self.infty)]))
+        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(1, self.infty)]))
         self.Ans = [np.prod([l / self.mu for l in self.lambda_ns][:n]) * self.p0 for n in range(self.infty)]
 
         # Find sojourn times
@@ -598,7 +598,7 @@ class MethodC:
 
 
         # Find A_n
-        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(self.infty)]))
+        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(1, self.infty)]))
         self.Ans = [np.prod([l / self.mu for l in self.lambda_ns][:n]) * self.p0 for n in range(self.infty)]
 
         # Find sojourn times
@@ -664,7 +664,7 @@ class MethodE:
         self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-2]] + [self.lambda_ * self.M.props[-2] for _ in range(self.infty - self.limit + 2)]
 
         # Find A_n
-        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(self.infty)]))
+        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(1, self.infty)]))
         self.Ans = [np.prod([l / self.mu for l in self.lambda_ns][:n]) * self.p0 for n in range(self.infty)]
 
         # Find sojourn times
@@ -696,7 +696,7 @@ class MethodF:
         self.lambda_ns = self.Approx.lambda_ns
 
         # Find A_n
-        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(self.infty)]))
+        self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(1, self.infty)]))
         self.Ans = [np.prod([l / self.mu for l in self.lambda_ns][:n]) * self.p0 for n in range(self.infty)]
 
         # Find sojourn times
