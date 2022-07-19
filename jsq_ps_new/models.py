@@ -573,7 +573,7 @@ class MethodA:
         # Find \lambda_n
         self.M = MMk_JSQ_PS_mc(L=lambda_, m=mu, k=R, limit=limit)
         self.M.solve()
-        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-2]] + [self.lambda_ * self.M.props[-2] for _ in range(self.infty - self.limit + 2)]
+        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-1]] + [self.lambda_ * self.M.props[-1] for _ in range(self.infty - self.limit + 1)]
 
         # Find A_n
         self.M.find_probs_of_n_custs_on_arrival()
@@ -609,7 +609,7 @@ class MethodB:
         # Find \lambda_n
         self.M = MMk_JSQ_PS_mc(L=lambda_, m=mu, k=R, limit=limit)
         self.M.solve()
-        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-2]] + [self.lambda_ * self.M.props[-2] for _ in range(self.infty - self.limit + 2)]
+        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-1]] + [self.lambda_ * self.M.props[-1] for _ in range(self.infty - self.limit + 1)]
 
         # Find A_n
         self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(1, self.infty)]))
@@ -676,7 +676,7 @@ class MethodD:
         # Find \lambda_n
         self.M = MMk_JSQ_PS_mc(L=lambda_, m=mu, k=R, limit=limit)
         self.M.solve()
-        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-2]] + [self.lambda_ * self.M.props[-2] for _ in range(self.infty - self.limit + 2)]
+        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-1]] + [self.lambda_ * self.M.props[-1] for _ in range(self.infty - self.limit + 1)]
 
         # Find A_n
         self.M.find_probs_of_n_custs_on_arrival()
@@ -709,7 +709,7 @@ class MethodE:
         # Find \lambda_n
         self.M = MMk_JSQ_PS_mc(L=lambda_, m=mu, k=R, limit=limit)
         self.M.solve()
-        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-2]] + [self.lambda_ * self.M.props[-2] for _ in range(self.infty - self.limit + 2)]
+        self.lambda_ns = [self.lambda_ * p for p in self.M.props[:-1]] + [self.lambda_ * self.M.props[-1] for _ in range(self.infty - self.limit + 1)]
 
         # Find A_n
         self.p0 = 1 / (1 + sum([np.prod([l / self.mu for l in self.lambda_ns][:i]) for i in range(1, self.infty)]))
