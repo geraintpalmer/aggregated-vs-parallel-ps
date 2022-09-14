@@ -92,7 +92,7 @@ class SimulationUniform:
     This class derives the sojourn time cdf for a JSQ-PS vis simulation.
     The simulation methodology is via Ciw (v.2.2.0).
     """
-    def __init__(self, lambda_, mu, R, max_time, warmup, tracker=ciw.trackers.StateTracker(), ps_bar=True):
+    def __init__(self, lambda_, mu, R, max_time, warmup, tracker=ciw.trackers.StateTracker(), ps_bar=True, nonzero=False):
         """
         Parameters:
           mu: the service rate
@@ -101,6 +101,7 @@ class SimulationUniform:
         Hyperparameters:
           max_time: the amount of simulation time to run for
           warmup: the amount of warmup and cooldown time to not collect results
+          nonzero: if set to True, it runs service time U[1/(2mu), 3/(2mu)]
         """
         self.lambda_ = lambda_
         self.mu = mu
@@ -109,13 +110,21 @@ class SimulationUniform:
         self.warmup = warmup
         self.tracker = tracker
         self.ps_bar = ps_bar
+
+        # Obtain low and upper limit of the service time uniform distribution
+        if nonzero:
+            low = 1/(2*self.mu)
+            up = 3/(2*self.mu)
+        else:
+            low, up = 0, 2/self.mu 
+
         self.N = ciw.create_network(
             arrival_distributions=[
                 ciw.dists.Exponential(self.lambda_)] + [
                 ciw.dists.NoArrivals() for _ in range(self.R)],
             service_distributions=[
                 ciw.dists.Deterministic(0)] + [
-                ciw.dists.Uniform(0, 2 / self.mu) for _ in range(self.R)],
+                ciw.dists.Uniform(low, up) for _ in range(self.R)],
             number_of_servers=[float('inf') for _ in range(self.R + 1)],
             routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
         )
