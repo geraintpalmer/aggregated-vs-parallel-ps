@@ -1,8 +1,0 @@
-COMMENTS
-highway = (45.017790000000005, 7.66908) # corso Unità d'Italia 2962.5
-industrial = (45.02499, 7.63621) # Near FIAT 1429.3333333333333
-
-low_emissions = (45.07417, 7.69008) # Limiting area LEZ 451.5
-# ZTL limited traffic zone https://urbanaccessregulations.eu/countries-mainmenu-147/italy-mainmenu-81/piemonte-region/torino
-
-residential = (45.03448, 7.64825) # 99.0 Corso Unione Soviatica near Lingoto
