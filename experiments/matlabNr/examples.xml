@@ -1,0 +1,2961 @@
+<?xml version="1.0"?>
+<demos>
+  <demoitem>
+    <source>GenerateMultipleLowPAPRSequencesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex00509894</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DetermineTransportBlockSizeForOneCodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex00684762</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat1SymbolsForTwoBitHARQACKTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex00763268</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePDSCHModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex00828695</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHDMRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex01642735</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDSCHSymbolsForCodewordsWithDiffModSchemeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex01828603</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureCDLChannelAntennaUsingPhasedArrayExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex02064846</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>phased</product>
+  </demoitem>
+  <demoitem>
+    <source>MapTwoCodewordsToFiveTransmissionLayersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex02066613</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetDLSCHInformationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex02280775</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PlotOutputLocationsInLDPCRateMatchedCodeBlocksExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex02729200</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateQPSKModulatedSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex02918309</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetSSSResourceElementIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex03022340</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DLSCHEncodingWithMultipleHARQProcessesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex03291715</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformMMSEEqualizationForPBCHExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex03463190</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRMACPacketToPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex03517122</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateRegularOrPeriodicBSRExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex03527517</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetOFDMInformationForSpecifiedSampleRateExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex03622785</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUCCHFormat0SymbolsForPositiveSRTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex04208332</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CalculateAndAppendCRCExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex04912887</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateTheCodewordWithUncodedDataAndUncodedUCIExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex06054002</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>TransmissionOverTDLDChannelModelWithCrossPolarAntennasExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex06247784</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat2SymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex06632767</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateCodewordWithPredefinedCodedDataAndCodedUCITypesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex06875274</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat2ModulationSymbolsOfNondefaultDTExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex07780145</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPRSExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex08055513</metadata>
+    <thumbnail>html/NewRadioPRSExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePDSCHObjectToConfigureTwoReservedPRBPatternsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex08565845</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRModelingAndTestingRFTransmitterExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex09004054</metadata>
+    <thumbnail>html/NRModelingAndTestingRFTransmitterExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>simrf</product>
+    <product>simulink</product>
+    <file component="5g" timestamp="1674486966">NRModelingAndTestingRFTransmitterModel.slx</file>
+    <file component="5g" timestamp="1624982102">RFTransmitterRFIcon.png</file>
+    <file component="5g" timestamp="1575635810">RFTransmitterRFMask.png</file>
+    <file component="5g" timestamp="1624982102">RFTransmitterWaveformParametersMask.png</file>
+    <file component="5g" timestamp="1645805844">hACLRParametersNR.m</file>
+    <file component="5g" timestamp="1674486966">hDecodeSubframe.m</file>
+    <file component="5g" timestamp="1674376742">hInitializeNRTMModel.m</file>
+    <file component="repository/spc" timestamp="1594123631">hSlotResources.m</file>
+    <file component="repository/spc" timestamp="1621614248">hListTargetPDSCHs.m</file>
+    <file component="5g" timestamp="1624982102">RFTransmitterMultiRateMask.png</file>
+    <file component="5g" timestamp="1674376742">hNRDownlinkEVM.m</file>
+    <file component="5g" timestamp="1673644116">hChannelEstEVM.m</file>
+    <file component="repository/spc" timestamp="1673644509">hChannelEstimateEVM3GPP.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVM.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1645461440">hRawEVM.m</file>
+    <file component="5g" timestamp="1669287134">hReferenceGrid.m</file>
+    <file component="5g" timestamp="1673644116">hDecodeSlots.m</file>
+  </demoitem>
+  <demoitem>
+    <source>DecodeLDPCCodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex09161300</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioCSIRSMeasurementsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex09266412</metadata>
+    <thumbnail>html/NewRadioCSIRSMeasurementsExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUCCHFormat2ConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex09728255</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetPUCCHHoppingParamIntraSlotFrequencyHoppingIsDisabledExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex09989887</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePRSIndicesForMultipleResourcesInResourceSetExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex10181706</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigurePUCCHFor5GUplinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex10375015</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAndDecodeBSRExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex10441779</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigurePUSCHFor5GUplinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex10766282</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureMultiplePDCCHFor5GDownlinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex11054284</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureSSBurstFor5GDownlinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex11497660</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CheckDataBlockForCRCErrorExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex13776806</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSpecificDMRSSymbolsForCPOFDMExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex13895717</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DemodulatePhysicalBroadcastChannelSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex13964314</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUCCHFormat4ConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex14459163</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateOFDMModulatedWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex14945843</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRCellPerformanceEvaluationWithPhysicalLayerIntegrationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex15349064</metadata>
+    <thumbnail>data/NRNodeComposition.PNG</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="1594462130">hNRMACPDUParser.m</file>
+    <file component="5g" timestamp="1608221417">hNRPDSCHInfo.m</file>
+    <file component="5g" timestamp="1600682651">hNRPUSCHInfo.m</file>
+    <file component="5g" timestamp="1616160119">hNRPhyLogger.m</file>
+    <file component="5g" timestamp="1642547980">hNRSchedulingLogger.m</file>
+    <file component="5g" timestamp="1616160119">hNRUE.m</file>
+    <file component="5g" timestamp="1616160119">hNRUEPassThroughPhy.m</file>
+    <file component="5g" timestamp="1656685782">hNRUEPhy.m</file>
+    <file component="5g" timestamp="1642547980">hNRGNBMAC.m</file>
+    <file component="5g" timestamp="1619609869">hNRUEMAC.m</file>
+    <file component="5g" timestamp="1594901880">hNRSchedulerBestCQI.m</file>
+    <file component="5g" timestamp="1616160119">hNRSchedulerProportionalFair.m</file>
+    <file component="5g" timestamp="1594901880">hNRSchedulerRoundRobin.m</file>
+    <file component="5g" timestamp="1600682651">hNRRxIndicationInfo.m</file>
+    <file component="5g" timestamp="1616160119">hNRUplinkGrantFormat.m</file>
+    <file component="5g" timestamp="1608221417">hNRDownlinkGrantFormat.m</file>
+    <file component="5g" timestamp="1593170751">hNewHARQProcesses.m</file>
+    <file component="5g" timestamp="1593170751">hUpdateHARQProcess.m</file>
+    <file component="5g" timestamp="1593170751">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1655892087">hCQISelect.m</file>
+    <file component="5g" timestamp="1616160119">hNRGNB.m</file>
+    <file component="5g" timestamp="1656685782">hNRGNBPhy.m</file>
+    <file component="5g" timestamp="1626289221">hNRRLCLogger.m</file>
+    <file component="5g" timestamp="1616160119">hNRGNBPassThroughPhy.m</file>
+    <file component="5g" timestamp="1616160119">hNRPhyInterface.m</file>
+    <file component="5g" timestamp="1608221417">hNRPhyRxBuffer.m</file>
+    <file component="5g" timestamp="1594901880">hNRRLCDataReassembly.m</file>
+    <file component="5g" timestamp="1603097640">hNRRLCEntity.m</file>
+    <file component="5g" timestamp="1632830300">hNRNode.m</file>
+    <file component="5g" timestamp="1603097640">hNRUMEntity.m</file>
+    <file component="5g" timestamp="1616160119">hNRMAC.m</file>
+    <file component="5g" timestamp="1642547980">hNRScheduler.m</file>
+    <file component="5g" timestamp="1609853457">NRCellPerformanceExampleBLERLog.png</file>
+    <file component="5g" timestamp="1626289221">NRPostSimVisualization.m</file>
+    <file component="5g" timestamp="1613720525">hNRAMEntity.m</file>
+    <file component="5g" timestamp="1642015413">NRNodeComposition.PNG</file>
+    <file component="5g" timestamp="1576491435">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1588062198">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1655892087">hDLPMISelect.m</file>
+    <file component="5g" timestamp="1669817343">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1610356991">hPRGPrecode.m</file>
+    <file component="5g" timestamp="1626289221">hNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1610477256">NRCellPerformanceOperations.png</file>
+    <file component="5g" timestamp="1626289221">hApplication.m</file>
+    <file component="5g" timestamp="1625934858">hNRGridVisualizer.m</file>
+    <file component="5g" timestamp="1646310049">hWirelessNetworkSimulator.m</file>
+    <file component="5g" timestamp="1655892087">hCQITables.m</file>
+    <file component="5g" timestamp="1655892087">hDLPMISubbandInfo.m</file>
+    <file component="5g" timestamp="1659974515">hRISelect.m</file>
+  </demoitem>
+  <demoitem>
+    <source>TransmitAndDecodePolarEncodedDataExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex15485602</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePseudorandomScramblingSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex15519740</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>QPSKDemodulationWithSoftDecisionModeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex15722670</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAndMapPDCCHSymbolsToCarrierGridExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex15724826</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat0SymbolsForPositiveSRExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex16588739</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRPackettoPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex16673174</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PlotEstimatedChannelMagnitudeResponseForCDLDChannelModelExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex16804969</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSpecificPTRSSymbolsForCPOFDMExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex17764570</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePRSConfigurationObjectWithTwoPRSResourcesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex17908011</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>SendWaveformThroughHSTSingleTapChannelExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex18010967</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUSCHSymbolsForCodebookBasedTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex18099030</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EstimateHSTSFNChannelDelayExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex18199072</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPRSPositioningExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex18523124</metadata>
+    <thumbnail>html/NewRadioPRSPositioningExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUCCHFormat4SymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex19248300</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DeepLearningDataSynthesisFor5GChannelEstimationExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex20363210</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>nnet</product>
+    <file component="5g" timestamp="1565974674">trainedChannelEstimationNetwork.mat</file>
+    <file component="5g" timestamp="1572451172">DeepLearningDataSynthesis5G_ChEstimationOverview.png</file>
+    <file component="5g" timestamp="1572451172">DeepLearningDataSynthesis5G_ExampleOverview.png</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePSSSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex20896735</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeMACPDUInDownlinkDirectionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex21158197</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateDMRSIndicesForCodebookBasedTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex21324065</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>LDPCProcessingDLSCHExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex21786547</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1548081746">nr5gSCH.png</file>
+  </demoitem>
+  <demoitem>
+    <source>DecodeShortBSRExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex22025756</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSpecificDMRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex22298525</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>LayerMappingAndDemappingOfSingleCodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex22473329</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Modeling5GNRTransportChannelsWithHARQExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex22477166</metadata>
+    <thumbnail>html/Modeling5GNRTransportChannelsWithHARQExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1625849419">HARQEntity.m</file>
+  </demoitem>
+  <demoitem>
+    <source>BacktoBackLDPCCodeBlockSegmentationAndDesegmentationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex22993551</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeScrambledBCHTransportBlockExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex23011346</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDSCHScramblingSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex23666971</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePDCCHModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex23761920</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureAndGenerateSingleUser5GUplinkWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex23783692</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPDSCHThroughputWithCSIFeedbackExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex23785253</metadata>
+    <thumbnail>html/NewRadioPDSCHThroughputWithCSIFeedbackExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1655892087">hPRGInfo.m</file>
+    <file component="5g" timestamp="1655892087">hPRGPrecode.m</file>
+    <file component="5g" timestamp="1657718517">hCQITables.m</file>
+    <file component="5g" timestamp="1665598922">hDLPMISubbandInfo.m</file>
+    <file component="5g" timestamp="1657718517">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1658402501">hCQISelect.m</file>
+    <file component="5g" timestamp="1669807483">hDLPMISelect.m</file>
+    <file component="5g" timestamp="1659702722">hRISelect.m</file>
+    <file component="5g" timestamp="1665598520">hSubbandChannelEstimate.m</file>
+    <file component="repository/spc" timestamp="1669817343">helperCSINetDecode.m</file>
+    <file component="repository/spc" timestamp="1669817343">helperCSINetDownloadData.m</file>
+    <file component="repository/spc" timestamp="1669817343">helperCSINetEncode.m</file>
+    <file component="repository/spc" timestamp="1669817343">helperCSINetPostprocessChannelEstimate.m</file>
+    <file component="repository/spc" timestamp="1669817343">helperCSINetPreprocessChannelEstimate.m</file>
+    <file component="repository/spc" timestamp="1669817343">helperCSINetSplitEncoderDecoder.m</file>
+    <file component="5g" timestamp="1669817343">hCSIDecode.m</file>
+    <file component="5g" timestamp="1669817343">hCSIEncode.m</file>
+    <file component="5g" timestamp="1669817343">hLoadAINetwork.m</file>
+    <file component="5g" timestamp="1669817343">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1669714556">hMCSSelect.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ResetSoftBufferInULSCHDecoderWithMultipleHARQProcessesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex24154342</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigurePRSResourceSetExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex24294349</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDSCHSymbolsForSingleCodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex25559375</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat0ModSymbExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex25824827</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DisplayIndexMappingOfLDPCCodeBlockDesegmentationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex26128007</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ModelingDownlinkControlInformationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex26486710</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1556714651">nrDCI_schematic.png</file>
+  </demoitem>
+  <demoitem>
+    <source>PerformPUSCHDescramblingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex27136085</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EncodeBCHTransportBlockExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex27173707</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat1ModSymbForOneBitHARQACKTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex27432576</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePaddingBSRExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex28628583</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EVMMeasurementOf5GNRPUSCHWaveformsExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex28943958</metadata>
+    <thumbnail>html/EVMMeasurementOf5GNRPUSCHWaveformsExample_03.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1657721297">EVMMeasurementOf5GNRPUSCHWaveformsExample.m</file>
+    <file component="5g" timestamp="1673644509">hNRPUSCHEVM.m</file>
+    <file component="repository/spc" timestamp="1642802796">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1642802796">hEVM.m</file>
+    <file component="repository/spc" timestamp="1673644509">hChannelEstimateEVM3GPP.m</file>
+    <file component="repository/spc" timestamp="1609933911">hRawEVM.m</file>
+    <file component="repository/spc" timestamp="1610725086">hNRReferenceWaveformGenerator.m</file>
+    <file component="5g" timestamp="1594144978">hPhaseNoisePoleZeroModel.m</file>
+    <file component="5g" timestamp="1661775411">5G_NR_FRC_PUSCH_EVM_ProcessingChain.png</file>
+    <file component="5g" timestamp="1640274464">hChannelEstEVM.m</file>
+    <file component="5g" timestamp="1642802796">hDecodeSlots.m</file>
+    <file component="5g" timestamp="1642802796">hReferenceGrid.m</file>
+    <file component="5g" timestamp="1642802796">hNRFrequencyOffset.m</file>
+    <file component="5g" timestamp="1657721297">hNRIQImbalance.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateCSIRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex29570551</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateOnOffTrafficPatternToViewPacketSizesAndIntervalsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex29614949</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPDSCHThroughputExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex30230334</metadata>
+    <thumbnail>data/longRunThroughput.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1556721749">PDSCHLinkExampleProcessingChain.png</file>
+    <file component="5g" timestamp="1636530826">longRunThroughput.png</file>
+    <file component="5g" timestamp="1650977030">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1621324591">hPRGPrecode.m</file>
+    <file component="5g" timestamp="1656931339">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1626173452">HARQEntity.m</file>
+    <file component="5g" timestamp="1655892087">hPRGInfo.m</file>
+    <file component="5g" timestamp="1665598520">hSubbandChannelEstimate.m</file>
+  </demoitem>
+  <demoitem>
+    <source>OrientTransmitAndReceiveAntennasUsingLOSPathAnglesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex30891081</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigurePRACHPreambleFormatExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex31236569</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRDownlinkCSIReportingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex31269530</metadata>
+    <thumbnail>html/NRDownlinkCSIReportingExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1674578027">hDLPMISelect.m</file>
+    <file component="5g" timestamp="1674578027">hCQISelect.m</file>
+    <file component="5g" timestamp="1672708817">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1674578027">hRISelect.m</file>
+    <file component="5g" timestamp="1655843766">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1657034304">hCQITables.m</file>
+    <file component="5g" timestamp="1672708817">hDLPMISubbandInfo.m</file>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUSCHSpecificPTRSConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex31698333</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CalculateAndAppendMaskedCRCExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex31931638</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateSSSSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32236553</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRDownlinkCarrierAggregationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32664864</metadata>
+    <thumbnail>data/CarrierAggregationParametersDefinition.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1607436222">CarrierAggregationParametersDefinition.png</file>
+    <file component="repository/spc" timestamp="1645461440">hListTargetPDSCHs.m</file>
+    <file component="repository/spc" timestamp="1610536217">hNRReferenceWaveformGenerator.m</file>
+    <file component="repository/spc" timestamp="1594123631">hSlotResources.m</file>
+    <file component="5g" timestamp="1607436222">CarrierAggregationDiagram.png</file>
+    <file component="repository/spc" timestamp="1609933911">hChannelEstimateEVM3GPP.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVM.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1645461440">hRawEVM.m</file>
+    <file component="5g" timestamp="1645461440">hChannelEstEVM.m</file>
+    <file component="5g" timestamp="1645461440">hDecodeSlots.m</file>
+    <file component="5g" timestamp="1645461440">hNRDownlinkEVM.m</file>
+    <file component="5g" timestamp="1645461440">hNRFrequencyOffset.m</file>
+    <file component="5g" timestamp="1645461440">hReferenceGrid.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSpecificPTRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32785756</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureAndGenerateSingleUser5GDownlinkWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32793299</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EncodeUCIMessageBitsFor16QAMModulationSchemeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex32982353</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformPUSCHDescramblingWithPlaceholderIndicesOfUCIExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex33068074</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHModSymbUsingDMRSScramblingIdentityExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex33129311</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>SynchronizationSignalBlocksAndBurstsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex33359358</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateMACSubPDUWithMACBSRPayloadExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex33686330</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformLDPCRateMatchingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex33743275</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateOFDMModulatedWaveformForSpecifiedSampleRateExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex34844750</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureMultiplePUSCHFor5GUplinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex35148592</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>AppBased5GWaveformGenerationExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex35155393</metadata>
+    <hideCode/>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1653059814">5gwwg-app-screencap.png</file>
+    <noButton/>
+  </demoitem>
+  <demoitem>
+    <source>RetrieveTransportBlockFromDLSCHEncWithMultHARQProcessesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex35251689</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHPTRSSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex36110409</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PlotEstimatedChannelMagnitudeResponseForTDLCChannelModelExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex36731576</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat3QPSKModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex37907917</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRCellSearchMIBAndSIB1RecoveryExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex38824618</metadata>
+    <thumbnail>html/NRCellSearchMIBAndSIB1RecoveryExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1626344870">hCORESET0Resources.m</file>
+    <file component="5g" timestamp="1592405778">hMCS.m</file>
+    <file component="5g" timestamp="1667312736">hPDCCH0Configuration.m</file>
+    <file component="5g" timestamp="1626344870">hPDSCHTimeAllocationTables.m</file>
+    <file component="5g" timestamp="1666686516">hSIB1WaveformConfiguration.m</file>
+    <file component="5g" timestamp="1592405778">hSSBurstSubcarrierSpacing.m</file>
+    <file component="5g" timestamp="1592405778">hSSBurstStartSymbols.m</file>
+    <file component="5g" timestamp="1592405778">hSSBurstFrequencyCorrect.m</file>
+    <file component="5g" timestamp="1592381137">capturedWaveformSIB1.mat</file>
+    <file component="5g" timestamp="1666864800">hPDCCH0MonitoringOccasions.m</file>
+    <file component="5g" timestamp="1594898926">CellSearchExampleCORESET0.png</file>
+    <file component="5g" timestamp="1593083861">CellSearchExampleMIBRecovery.png</file>
+    <file component="5g" timestamp="1594898926">CellSearchExampleSIB1Recovery.png</file>
+    <file component="5g" timestamp="1666686516">hSIB1PDSCHConfiguration.m</file>
+    <file component="5g" timestamp="1626344870">DCIFormat1_0_SIRNTI.m</file>
+    <file component="5g" timestamp="1626191578">MessageFormat.m</file>
+    <file component="5g" timestamp="1623840089">BitField.m</file>
+    <file component="5g" timestamp="1626344870">MIB.m</file>
+    <file component="5g" timestamp="1626344870">PDCCH_ConfigSIB1.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePRSSymbolsAndIndicesForTwoResourcesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex39508735</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHIndicesForCodebookBasedTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex40156410</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPDSCHReferenceSignalsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex40378848</metadata>
+    <thumbnail>html/NewRadioPDSCHReferenceSignalsExample_11.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DemodulateOFDMWaveformWithExtendedCyclicPrefixExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex40566291</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>UseCustomOFDMSampleRateAndDefaultFFTSizeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex40917548</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureCSIRSFor5GDownlinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex41160473</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRCellPerformanceWithDownlinkMUMIMOExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex41308820</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="1650977030">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1667515744">helperNRPhyLogger.m</file>
+    <file component="5g" timestamp="1667515744">helperNRSchedulingLogger.m</file>
+    <file component="5g" timestamp="1667518802">hMakeCustomCDL.m</file>
+    <file component="5g" timestamp="1667515744">hNRCustomChannelModel.m</file>
+    <file component="5g" timestamp="1674842758">helperNRMetricsVisualizer.m</file>
+  </demoitem>
+  <demoitem>
+    <source>NRUplinkCSIEstimationUsingSRSExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex42479532</metadata>
+    <thumbnail>html/NRUplinkCSIEstimationUsingSRSExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1576491435">hMaxPUSCHPrecodingMatrixIndicator.m</file>
+    <file component="5g" timestamp="1669654306">hPMISelect.m</file>
+    <file component="5g" timestamp="1669654306">hPMISelectionSINRLoss.m</file>
+    <file component="5g" timestamp="1669654306">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1576491435">hSINRPerSubband.m</file>
+    <file component="5g" timestamp="1576491435">hSRSCDMLengths.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GetPRACHOFDMInformationForCustomWindowingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex42706255</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeMACPDUInUplinkDirectionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex42972026</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureMultiplePDSCHFor5GDownlinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex43247886</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAndMapCSIRSSymbolsUsedForTrackingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex43785836</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetULSCHInformationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex44415221</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetBitCapacityInformationOfULSCHDataAndUCIExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex45122716</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRPacketDataToPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex45444910</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>WriteSIB1PacketWithCommentToPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex45764415</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ReadThreeECPRIPacketsInStreamingModeFromPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex46579735</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetPSSResourceElementIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex46682809</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateCUPlaneMessagesForORANFronthaulTestExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex46782371</metadata>
+    <thumbnail>html/GenerateCUPlaneMessagesForORANFronthaulTestExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1658491956">hORANProtocolEncoder.m</file>
+    <file component="repository/spc" timestamp="1635412209">hNRReferenceWaveformGenerator.m</file>
+  </demoitem>
+  <demoitem>
+    <source>WriteGlobalHeaderFor5GNRPacketToPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex46917319</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadio5GPolarCodingExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex46989568</metadata>
+    <thumbnail>data/nr5gPolarL8DL.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1530195924">nr5gDLPolarCoding.png</file>
+    <file component="5g" timestamp="1576875610">nr5gPolarL8DL.png</file>
+    <file component="5g" timestamp="1530129814">nr5gPolar.png</file>
+    <file component="5g" timestamp="1530195924">nr5gULPolarCoding.png</file>
+    <file component="5g" timestamp="1576875610">nr5gPolarL8UL.png</file>
+  </demoitem>
+  <demoitem>
+    <source>NRIntercellInterferenceModelingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex47014679</metadata>
+    <thumbnail>data/CoChannelCells.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="0">CoChannelCells.png</file>
+    <file component="5g" timestamp="0">Aggressor-Victim.png</file>
+    <file component="5g" timestamp="1673604137">helperNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1673604137">helperNRPhyLogger.m</file>
+    <file component="5g" timestamp="1667515744">helperNRSchedulingLogger.m</file>
+  </demoitem>
+  <demoitem>
+    <source>CreatePDSCHDMRSObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex47034670</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformSSBMeasurementsWithPBCHDMRSSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex48572942</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>IncludePathLossInNRLinkLevelSimulationsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex48737011</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1626174544">IncludePathLossInNRLinkLevelSimulations.png</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat4Pi2BPSKModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex49391560</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ApplyPUSCHPrecodingCodebookExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex49449187</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetPRACHOFDMInformationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50234143</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUCCHFormat1SymbolsWithDetectionThresholdExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50534751</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CalculatePathLossBetweenMultipleBSAndUEExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50616991</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>UseDefaultOFDMSampleRateAndDefaultFFTSizeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex50686398</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ULSCHEncodingWithMultipleHARQProcessesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex51118155</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRPacketDataToPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex51172729</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRDownlinkWaveformGenerationExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex51408671</metadata>
+    <thumbnail>html/NRDownlinkWaveformGenerationExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1594996515">bwp.png</file>
+    <file component="5g" timestamp="1594996515">coresetAlloc.png</file>
+    <file component="5g" timestamp="1531406604">pdschAlloc.png</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePRACHOFDMModulatedWaveformWithCustomWindowingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex51901987</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigurePDSCHFor5GDownlinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex52227732</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformCSIRSMeasurementsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex53159461</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetPBCHResourceElementIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex53530732</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUSCHSpecificDMRSObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex53827115</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Mapping5GPhysicalChannelsAndSignalsToTheResourceGridExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex54128523</metadata>
+    <thumbnail>html/Mapping5GPhysicalChannelsAndSignalsToTheResourceGridExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ExploreEffectOfSampleDensityPropertyInCDLChannelOutputExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex54319810</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>MapOneCodewordToFourTransmissionLayersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex54721410</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRTestModelWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex55060964</metadata>
+    <thumbnail>html/NRTestModelWaveformGenerationExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="repository/spc" timestamp="1674059088">hNRReferenceWaveformGenerator.m</file>
+  </demoitem>
+  <demoitem>
+    <source>RetrieveTransBlockFromULSCHEncoderWithMultHARQProcessesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex55599871</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUCCHFormat3SymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex56092861</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex56216601</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateTransformPrecodedPUSCHSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex56426026</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureBandwidthPartForDefaultSCSExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex56811228</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHDMRSSymbolsForAllCandidatesAndAggregationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex56933277</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHModSymbUsingNcellIDForScramblingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex57053598</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRPlugCustomSchedulerExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex57335413</metadata>
+    <thumbnail>data/schedulerContextInterfaceThumbNail.jpg</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1628271065">hCustomScheduler.m</file>
+    <file component="5g" timestamp="1628271065">hNRScheduler.m</file>
+    <file component="5g" timestamp="1588062198">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1593170751">hNewHARQProcesses.m</file>
+    <file component="5g" timestamp="1593170751">hUpdateHARQProcess.m</file>
+    <file component="5g" timestamp="1628271065">schedulerContextInterface.JPG</file>
+    <file component="5g" timestamp="1628271065">schedulerRunInterface.JPG</file>
+    <file component="5g" timestamp="1642022745">schedulerContextInterfaceThumbNail.jpg</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHDMRSIndicesForAllCandidatesAndAggregationsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex57480072</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>AddInternetProtocolPacketDecoderToPCAPFileReaderExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex57498837</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1673605263">helperIPDecode.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ConnectULSCHEncoderAndDecoderBacktoBackExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex58145663</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformLDPCRateRecoveryExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex58338128</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeLongAndLongTruncatedBSRMACCEExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex60045083</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRDownlinkACLRMeasurementExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex60215979</metadata>
+    <thumbnail>html/NRDownlinkACLRMeasurementExample_05.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1594123631">hACLRMeasurementNR.m</file>
+    <file component="5g" timestamp="1594981235">hACLRParametersNR.m</file>
+    <file component="repository/spc" timestamp="1635412209">hNRReferenceWaveformGenerator.m</file>
+    <file component="repository/spc" timestamp="1626431994">hListTargetPDSCHs.m</file>
+    <file component="repository/spc" timestamp="1642784696">hEVM.m</file>
+    <file component="repository/spc" timestamp="1610725086">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1609933911">hRawEVM.m</file>
+    <file component="repository/spc" timestamp="1610725086">hSlotResources.m</file>
+    <file component="5g" timestamp="1642784696">hNRDownlinkEVM.m</file>
+    <file component="5g" timestamp="1640274464">hReferenceGrid.m</file>
+    <file component="5g" timestamp="1642784696">hDecodeSlots.m</file>
+    <file component="5g" timestamp="1642761985">hChannelEstEVM.m</file>
+    <file component="repository/spc" timestamp="1642761985">hChannelEstimateEVM3GPP.m</file>
+    <file component="5g" timestamp="1642784696">hNRFrequencyOffset.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ReadECPRIPacketsFromPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex60234401</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DemodulateOFDMWaveformWithSpecifiedSampleRateExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex60410299</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformSSBMeasurementsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61012118</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61139862</metadata>
+    <thumbnail>html/NRWaveformGenerationExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>AddBLEDecoderToPCAPFileReaderObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61205493</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1620127983">blePackets.pcap</file>
+    <file component="5g" timestamp="1620885943">decodeBLEPacket.m</file>
+  </demoitem>
+  <demoitem>
+    <source>DemodulateOFDMWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61468766</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRChannelEstimationUsingCSIRSExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61561046</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUSCHConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61893969</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePDSCHPTRSConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex61931171</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHScramblingSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex62130757</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUCCHFormat3ConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex62172002</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUCCHFormat1ConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex62308903</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetPUCCHHopingInformationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex62418052</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat3Pi2BPSKSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex62647452</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat4QPSKSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex63007551</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ReadEthernetPacketsInStreamingModeFromPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex63234985</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioSRSConfigurationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex63317848</metadata>
+    <thumbnail>html/NewRadioSRSConfigurationExample_08.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EncodeUCIMessageBitsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex63894143</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPUSCHThroughputExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex64819461</metadata>
+    <thumbnail>data/longRunPUSCHThroughput.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1588062198">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1626350804">longRunPUSCHThroughput.png</file>
+    <file component="5g" timestamp="1552909060">PUSCHLinkExampleProcessingChain.png</file>
+    <file component="5g" timestamp="1552910717">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1626283405">HARQEntity.m</file>
+  </demoitem>
+  <demoitem>
+    <source>TDDReciprocityBasedPDSCHBeamformingUsingSRSExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex64876548</metadata>
+    <thumbnail>html/TDDReciprocityBasedPDSCHBeamformingUsingSRSExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>phased</product>
+    <file component="5g" timestamp="1654776918">hPRGInfo.m</file>
+    <file component="5g" timestamp="1674143299">hMultiUserSelection.m</file>
+    <file component="5g" timestamp="1654776918">hMultiUserSRS.m</file>
+    <file component="5g" timestamp="1672846995">hMultiUserPDSCH.m</file>
+    <file component="5g" timestamp="1674143299">hMultiUserChannels.m</file>
+    <file component="5g" timestamp="1654776918">hMultiULTransmit.m</file>
+    <file component="5g" timestamp="1654776918">hMultiULReceive.m</file>
+    <file component="5g" timestamp="1674143299">hMultiDLTransmit.m</file>
+    <file component="5g" timestamp="1665600506">hMultiDLReceive.m</file>
+    <file component="5g" timestamp="1654776918">hApplyMultiUserChannels.m</file>
+    <file component="5g" timestamp="1654776918">hApplyMultiUserAWGN.m</file>
+    <file component="5g" timestamp="1654776918">hPRGPrecode.m</file>
+    <file component="5g" timestamp="1654776918">hSRSCDMLengths.m</file>
+    <file component="5g" timestamp="1665417121">hMakeCustomCDL.m</file>
+    <file component="5g" timestamp="1665598520">hSubbandChannelEstimate.m</file>
+    <file component="repository/spc" timestamp="1674082723">helperGetCovariance.m</file>
+  </demoitem>
+  <demoitem>
+    <source>NRCellPerformanceEvaluationWithMIMOExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex64900576</metadata>
+    <thumbnail>html/NRCellPerformanceEvaluationWithMIMOExample_03.jpg</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="1588062198">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1667515744">hNRCustomChannelModel.m</file>
+    <file component="5g" timestamp="1673604137">helperNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1673604137">helperNRPhyLogger.m</file>
+    <file component="5g" timestamp="1667515744">helperNRSchedulingLogger.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ConfigurePDCCHFor5GDownlinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex64930602</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformPolarRateMatchingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex64952009</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAMACSubPDUWithPaddingPayloadExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65422432</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRCellPerformanceEvaluationWithBeamManagementExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65474181</metadata>
+    <thumbnail>html/NRCellPerformanceEvaluationWithBeamManagementExample_08.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>phased</product>
+    <product>wirelessnetwork</product>
+    <file component="repository/spc" timestamp="1644363403">hGetBeamSweepAngles.m</file>
+    <file component="5g" timestamp="1653331104">hPlotBeamformingPattern.m</file>
+    <file component="5g" timestamp="1576491435">hPMISelect.m</file>
+    <file component="5g" timestamp="1608221417">hPMIType1SinglePanelCodebook.m</file>
+    <file component="5g" timestamp="1576491435">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1644363403">hPRGPrecode.m</file>
+    <file component="5g" timestamp="1628511660">NRPostSimVisualization.m</file>
+    <file component="5g" timestamp="1628511660">hApplication.m</file>
+    <file component="5g" timestamp="1588062198">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1655892087">hCQISelect.m</file>
+    <file component="5g" timestamp="1655892087">hDLPMISelect.m</file>
+    <file component="5g" timestamp="1576491435">hMaxPUSCHPrecodingMatrixIndicator.m</file>
+    <file component="5g" timestamp="1593170751">hNewHARQProcesses.m</file>
+    <file component="5g" timestamp="1628511660">hNRAMEntity.m</file>
+    <file component="5g" timestamp="1608221417">hNRDownlinkGrantFormat.m</file>
+    <file component="5g" timestamp="1628511660">hNRGNB.m</file>
+    <file component="5g" timestamp="1644363403">hNRGNBMAC.m</file>
+    <file component="5g" timestamp="1651006541">hNRGNBPhy.m</file>
+    <file component="5g" timestamp="1628511660">hNRGridVisualizer.m</file>
+    <file component="5g" timestamp="1628511660">hNRMAC.m</file>
+    <file component="5g" timestamp="1594462130">hNRMACPDUParser.m</file>
+    <file component="5g" timestamp="1628511660">hNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1667518802">hNRNode.m</file>
+    <file component="5g" timestamp="1608221417">hNRPDSCHInfo.m</file>
+    <file component="5g" timestamp="1628511660">hNRPhyInterface.m</file>
+    <file component="5g" timestamp="1628511660">hNRPhyLogger.m</file>
+    <file component="5g" timestamp="1608221417">hNRPhyRxBuffer.m</file>
+    <file component="5g" timestamp="1600682651">hNRPUSCHInfo.m</file>
+    <file component="5g" timestamp="1628511660">hNRRLCDataReassembly.m</file>
+    <file component="5g" timestamp="1628511660">hNRRLCEntity.m</file>
+    <file component="5g" timestamp="1628511660">hNRRLCLogger.m</file>
+    <file component="5g" timestamp="1600682651">hNRRxIndicationInfo.m</file>
+    <file component="5g" timestamp="1651006541">hNRScheduler.m</file>
+    <file component="5g" timestamp="1594901880">hNRSchedulerBestCQI.m</file>
+    <file component="5g" timestamp="1628511660">hNRSchedulerProportionalFair.m</file>
+    <file component="5g" timestamp="1594901880">hNRSchedulerRoundRobin.m</file>
+    <file component="5g" timestamp="1628511660">hNRSchedulingLogger.m</file>
+    <file component="5g" timestamp="1628511660">hNRUE.m</file>
+    <file component="5g" timestamp="1651006541">hNRUEMAC.m</file>
+    <file component="5g" timestamp="1653331104">hNRUEPhy.m</file>
+    <file component="5g" timestamp="1628511660">hNRUMEntity.m</file>
+    <file component="5g" timestamp="1616160119">hNRUplinkGrantFormat.m</file>
+    <file component="5g" timestamp="1576491435">hSINRPerSubband.m</file>
+    <file component="5g" timestamp="1593170751">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1576491435">hSRSCDMLengths.m</file>
+    <file component="5g" timestamp="1593170751">hUpdateHARQProcess.m</file>
+    <file component="5g" timestamp="1667518802">hWirelessNetworkSimulator.m</file>
+    <file component="5g" timestamp="1655892087">hCQITables.m</file>
+    <file component="5g" timestamp="1655892087">hDLPMISubbandInfo.m</file>
+    <file component="5g" timestamp="1669817343">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1659974515">hRISelect.m</file>
+    <file component="5g" timestamp="1667518802">hMakeCustomCDL.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureAndGenerateMultiuser5GUplinkWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65527617</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateSRSIndicesFor2PortTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65694741</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHScramblingSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65899706</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRUserDefinedCustomBlockToPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex65982252</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PlotChannelImpulseMagnAndTimingOffsetForTDLCChannelModelExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex66024992</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat3Pi2BPSKModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex66083393</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeUCICodewordWith16QAMModulationSchemeAndAWGNExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex66241743</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformUCIMultiplexingAndDemultiplexingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex66265801</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat0IndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex66891769</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>QAMDemodulationWithHardDecisionModeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex67343309</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EncodeAndDecodeTheCodewordWithUCIPlaceholdersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex67381590</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRPackettoPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68164297</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSymbolsUsingCodebookBasedTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68173189</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPRACHWaveformGenerationExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex68381235</metadata>
+    <thumbnail>html/NewRadioPRACHWaveformGenerationExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1613643258">hNRPRACHWaveformGenerator.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GetOFDMInformationForExtendedCyclicPrefixExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68473406</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRDownlinkControlInformationFormatsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68492369</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1623840089">BitField.m</file>
+    <file component="5g" timestamp="1626349591">DCIFormat1_0_SIRNTI.m</file>
+    <file component="5g" timestamp="1626289205">MessageFormat.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat1IndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68652059</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DisplayIndexMappingOfLDPCCodeBlockSegmentationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68760048</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DLSCHAndPDSCHTransmitAndReceiveProcessingChainExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex68886979</metadata>
+    <thumbnail>html/DLSCHAndPDSCHTransmitAndReceiveProcessingChainExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1593170751">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1626444143">HARQEntity.m</file>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPRACHConfigurationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex69161653</metadata>
+    <thumbnail>html/NewRadioPRACHConfigurationExample_03.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1669041090">hPRACHInfoDisplay.m</file>
+    <file component="5g" timestamp="1669041090">hPRACHPreamblePlot.m</file>
+    <file component="5g" timestamp="1669041090">hPRACHResourceGridPlot.m</file>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioUCIOnPUSCHExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex69185805</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRWaveformCaptureAndAnalysisWithSDRExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex69321730</metadata>
+    <thumbnail>html/NRWaveformCaptureAndAnalysisWithSDRExample_01.png</thumbnail>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>plutoradio</product>
+    <product>usrpembeddedseriesradio</product>
+    <product>usrpradio</product>
+    <product>xilinxzynqbasedradio</product>
+    <file component="repository/spc" timestamp="1671482343">hSDRBase.m</file>
+    <file component="repository/spc" timestamp="1671482343">hSDRReceiver.m</file>
+    <file component="5g" timestamp="1645461440">hChannelEstEVM.m</file>
+    <file component="repository/spc" timestamp="1642761985">hChannelEstimateEVM3GPP.m</file>
+    <file component="5g" timestamp="1669296338">hDecodeSlots.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVM.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1645461440">hListTargetPDSCHs.m</file>
+    <file component="5g" timestamp="1669287134">hNRDownlinkEVM.m</file>
+    <file component="5g" timestamp="1669287134">hNRFrequencyOffset.m</file>
+    <file component="5g" timestamp="1657721297">hNRIQImbalance.m</file>
+    <file component="repository/spc" timestamp="1671482343">hNRReferenceWaveformGenerator.m</file>
+    <file component="repository/spc" timestamp="1645461440">hRawEVM.m</file>
+    <file component="5g" timestamp="1669287134">hReferenceGrid.m</file>
+    <file component="repository/spc" timestamp="1610725086">hSlotResources.m</file>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureSCSCarriersWithMixedNumerologiesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex69459150</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeUCICodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex69543052</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRTDDSymbolBasedSchedulingPerformanceEvaluationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex70199913</metadata>
+    <thumbnail>data/NRSchedulingTDDExampleThumbnail.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="1593170751">hNewHARQProcesses.m</file>
+    <file component="5g" timestamp="1593170751">hUpdateHARQProcess.m</file>
+    <file component="5g" timestamp="1608221417">hNRDownlinkGrantFormat.m</file>
+    <file component="5g" timestamp="1626458616">hNRRLCLogger.m</file>
+    <file component="5g" timestamp="1626458616">hNRSchedulingLogger.m</file>
+    <file component="5g" timestamp="1626458616">hNRUEMAC.m</file>
+    <file component="5g" timestamp="1616160119">hNRUplinkGrantFormat.m</file>
+    <file component="5g" timestamp="1593669305">NRSchedulingTDDExampleConfig1.png</file>
+    <file component="5g" timestamp="1576687712">NRSchedulingTDDExampleSchedOutputDL.PNG</file>
+    <file component="5g" timestamp="1576687712">NRSchedulingTDDExampleSchedOutputUL.PNG</file>
+    <file component="5g" timestamp="1578914032">NRSchedulingTDDExampleScheduler.png</file>
+    <file component="5g" timestamp="1609856142">NRSchedulingTDDExampleSchedulingLogs.png</file>
+    <file component="5g" timestamp="1576687712">NRSchedulingTDDExampleSymbolBasedScheduling.png</file>
+    <file component="5g" timestamp="1626458616">hNRGNBMAC.m</file>
+    <file component="5g" timestamp="1594462130">hNRMACPDUParser.m</file>
+    <file component="5g" timestamp="1626458616">hNRGNB.m</file>
+    <file component="5g" timestamp="1578914032">NRSchedulingTDDExamplePUSCHPrepTime.PNG</file>
+    <file component="5g" timestamp="1626458616">hNRUE.m</file>
+    <file component="5g" timestamp="1578914032">NRSchedulingExampleOperations.png</file>
+    <file component="5g" timestamp="1594909068">NRSchedulingTDDExampleSchedulingAssignmentLogs.PNG</file>
+    <file component="5g" timestamp="1578991472">NRSchedulingTDDExampleRBAssignment.PNG</file>
+    <file component="5g" timestamp="1626458616">hNRGNBPassThroughPhy.m</file>
+    <file component="5g" timestamp="1608221417">hNRPDSCHInfo.m</file>
+    <file component="5g" timestamp="1600682651">hNRPUSCHInfo.m</file>
+    <file component="5g" timestamp="1600682651">hNRRxIndicationInfo.m</file>
+    <file component="5g" timestamp="1594901880">hNRSchedulerBestCQI.m</file>
+    <file component="5g" timestamp="1626458616">hNRSchedulerProportionalFair.m</file>
+    <file component="5g" timestamp="1594901880">hNRSchedulerRoundRobin.m</file>
+    <file component="5g" timestamp="1626458616">hNRUEPassThroughPhy.m</file>
+    <file component="5g" timestamp="1626458616">hNRPhyInterface.m</file>
+    <file component="5g" timestamp="1626458616">hNRRLCDataReassembly.m</file>
+    <file component="5g" timestamp="1626458616">hNRRLCEntity.m</file>
+    <file component="5g" timestamp="1667499359">hNRNode.m</file>
+    <file component="5g" timestamp="1626458616">hNRUMEntity.m</file>
+    <file component="5g" timestamp="1626458616">hNRUEPhy.m</file>
+    <file component="5g" timestamp="1626458616">hNRGNBPhy.m</file>
+    <file component="5g" timestamp="1626458616">hNRScheduler.m</file>
+    <file component="5g" timestamp="1626458616">hNRPhyLogger.m</file>
+    <file component="5g" timestamp="1608221417">hNRPhyRxBuffer.m</file>
+    <file component="5g" timestamp="1626458616">NRPostSimVisualization.m</file>
+    <file component="5g" timestamp="1626458616">hNRMAC.m</file>
+    <file component="5g" timestamp="1593170751">hSkipWeakTimingOffset.m</file>
+    <file component="5g" timestamp="1626458616">hNRAMEntity.m</file>
+    <file component="5g" timestamp="1655892087">hCQISelect.m</file>
+    <file component="5g" timestamp="1674674929">hNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1588062198">hArrayGeometry.m</file>
+    <file component="5g" timestamp="1576491435">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1655892087">hDLPMISelect.m</file>
+    <file component="5g" timestamp="1669817343">hPrecodedSINR.m</file>
+    <file component="5g" timestamp="1621324591">hPRGPrecode.m</file>
+    <file component="5g" timestamp="1626458616">hApplication.m</file>
+    <file component="5g" timestamp="1626458616">hNRGridVisualizer.m</file>
+    <file component="5g" timestamp="1635268068">NRSchedulingTDDExampleThumbnail.png</file>
+    <file component="5g" timestamp="1667499359">hWirelessNetworkSimulator.m</file>
+    <file component="5g" timestamp="1655892087">hCQITables.m</file>
+    <file component="5g" timestamp="1655892087">hDLPMISubbandInfo.m</file>
+    <file component="5g" timestamp="1659974515">hRISelect.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateMACSubPDUForCEPayloadExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex71013970</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DetectPRACHPreambleWithTimingOffsetExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex71218853</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetPBCHDMRSResourceElementIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex72769308</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHAndDMRSIndicesRelativeToBWPGridExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex72783424</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureSRSFor5GUplinkWaveformGenerationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex73652006</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDSCHDMRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex73801604</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePDSCHSymbolsUsingConfigurationParametersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex74711730</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat1ModSymbForTwoBitHARQACKTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex75412904</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ResetSoftBufferInDLSCHDecoderWithMultipleHARQProcessesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex75450102</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePRACHOFDMModulatedWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex75539049</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CalculatePathLossBetweenSingleBSAndUEExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex75676883</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConnectDLSCHEncoderAndDecoderBacktoBackExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex75680991</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>LDPCCodeBlockSegmentationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex76417193</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>SNRDefinitionUsedInLinkSimulationsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex76514770</metadata>
+    <thumbnail>html/SNRDefinitionUsedInLinkSimulationsExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAndMapSRSSymbolsToCarrierGridExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex77656203</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EncodeDCIMessageBitsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex78668144</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ResetPCAPFileReaderObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex78671746</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat0ModSymbForHARQACKTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex78705032</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ComparePracticalAndPerfectChannelEstimatesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex79095459</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateLDPCCodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex79970262</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAndDecodeSymbolsForMultiplePUCCHFormatsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex80866852</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePBCHScramblingSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex81354109</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateSingleLowPAPRSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex81428434</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPRACHDetectionExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex81504238</metadata>
+    <thumbnail>html/NewRadioPRACHDetectionExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1651153157">hNRPRACHWaveformGenerator.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateType2LowPAPRSequenceExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex81672939</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>TransmissionOverChannelModelWithDelayProfileCDLDExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex81746680</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRMACBSRPacketToPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex82497814</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ReconstructChannelImpulseResponseCDLChannelPathFiltersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex82602839</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat4IndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex82666302</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureAndGenerateMultiUser5GDownlinkWaveformExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex82673486</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EstimateTimingOffsetForTDLCChannelTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83080443</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>AnalyzePRACHRootSequenceIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83269829</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePUCCHFormat0ConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83288572</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PlotPathGainsForTDLEDelayProfileWithSISOExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83821606</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateAndMapPRACHSymbolsToGridExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83859420</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateOFDMModulatedWaveformForExtendedCyclicPrefixExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex83948941</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRPhaseNoiseModelingAndCompensationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex84246787</metadata>
+    <thumbnail>html/NRPhaseNoiseModelingAndCompensationExample_04.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1594144978">hPhaseNoisePoleZeroModel.m</file>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUSCHModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex84702658</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DetermineTransportBlockSizeForTwoCodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex85151138</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ReadEthernetPacketsFromPCAPFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex85346253</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformPolarRateRecoveryExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex85381374</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat2IndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex85707614</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRMACPacketToPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86002572</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EstablishRLCBearerBetweenGNBAndUEExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86042271</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateZPAndNZPCSIRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86422847</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHDMRSFormat2SymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex86528383</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodeDCICodewordExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex87228608</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformORANFronthaulBlockCompressionAndDecompressionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex87470105</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>CreatePDSCHConfigurationObjectExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex87644051</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRUplinkWaveformGenerationExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex88127663</metadata>
+    <thumbnail>html/NRUplinkWaveformGenerationExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1594996515">bwp.png</file>
+    <file component="5g" timestamp="1531406604">pdschAlloc.png</file>
+  </demoitem>
+  <demoitem>
+    <source>UseCustomOFDMSampleRateAndCustomFFTSizeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex88494887</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Write5GNRInterfaceDescriptionBlockToPCAPNGFileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex88689351</metadata>
+    <sandboxPublished/>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>VisualizeCDLChannelModelCharacteristicsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex89208238</metadata>
+    <thumbnail>html/VisualizeCDLChannelModelCharacteristicsExample_02.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHDMRSFormat4SymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex90599382</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat4QPSKModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex90762552</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRInterferenceModelingWithToroidalWrapAroundExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex90950118</metadata>
+    <thumbnail>data/TopologyThumbNail.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="1608124737">TopologyComparison.PNG</file>
+    <file component="5g" timestamp="1642001445">TopologyThumbNail.png</file>
+    <file component="5g" timestamp="1674668981">helperNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1673604137">helperNRPhyLogger.m</file>
+    <file component="5g" timestamp="1667515744">helperNRSchedulingLogger.m</file>
+    <file component="5g" timestamp="1674668981">h38901Channel.m</file>
+    <file component="5g" timestamp="1674668981">h38901Scenario.m</file>
+  </demoitem>
+  <demoitem>
+    <source>GenerateSRSSymbolsFor2PortTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex91328029</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePBCHDMRSSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex91348739</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRUplinkPUCCHWaveformGenerationExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex91459653</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1626258821">pucchSummary.png</file>
+    <file component="5g" timestamp="1594996515">bwp.png</file>
+    <file component="5g" timestamp="1531406604">pdschAlloc.png</file>
+  </demoitem>
+  <demoitem>
+    <source>UseDefaultOFDMSampleRateAndCustomFFTSizeExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex92166421</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>RecoverTransformDeprecodedPUSCHSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex92312613</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUSCHSymbolsUsingConfigurationParametersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex92397381</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioRFReceiverWithLTEInterferenceExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex92567498</metadata>
+    <thumbnail>html/NewRadioRFReceiverWithLTEInterferenceExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>lte</product>
+    <product>simrf</product>
+    <product>simulink</product>
+    <file component="5g" timestamp="1674487665">NewRadioRFReceiverWithLTEInterferenceModel.slx</file>
+    <file component="5g" timestamp="1578997134">RFReceiverWithLTEInterferenceADCIcon.png</file>
+    <file component="5g" timestamp="1626431994">RFReceiverWithLTEInterferenceADCMask.png</file>
+    <file component="5g" timestamp="1626431994">RFReceiverWithLTEInterferenceRFIcon.png</file>
+    <file component="5g" timestamp="1626431994">RFReceiverWithLTEInterferenceRFReceiverMask.png</file>
+    <file component="5g" timestamp="1594981235">hACLRParametersNR.m</file>
+    <file component="5g" timestamp="1674487665">hDecodeSubframe.m</file>
+    <file component="5g" timestamp="1667414898">hInitializeNRTMModel.m</file>
+    <file component="repository/spc" timestamp="1626431994">hListTargetPDSCHs.m</file>
+    <file component="repository/spc" timestamp="1594123631">hSlotResources.m</file>
+    <file component="5g" timestamp="1626431994">RFReceiverWithLTEInterferenceLTEParameters.png</file>
+    <file component="5g" timestamp="1626431994">RFReceiverWithLTEInterferenceMultiMask.png</file>
+    <file component="5g" timestamp="1626431994">RFReceiverWithLTEInterferenceNRParameters.png</file>
+    <file component="5g" timestamp="1674376742">hNRDownlinkEVM.m</file>
+    <file component="5g" timestamp="1673644116">hChannelEstEVM.m</file>
+    <file component="repository/spc" timestamp="1673644509">hChannelEstimateEVM3GPP.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVM.m</file>
+    <file component="repository/spc" timestamp="1645461440">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1645461440">hRawEVM.m</file>
+    <file component="5g" timestamp="1669287134">hReferenceGrid.m</file>
+    <file component="5g" timestamp="1673644116">hDecodeSlots.m</file>
+  </demoitem>
+  <demoitem>
+    <source>TransmissionOverMIMOChannelModelWithDelayProfileTDLExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex93651072</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EVMMeasurementOfNRDownlinkWaveformsExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex93746037</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1673644116">hChannelEstEVM.m</file>
+    <file component="5g" timestamp="1673644116">hDecodeSlots.m</file>
+    <file component="repository/spc" timestamp="1642795710">hEVMPlots.m</file>
+    <file component="repository/spc" timestamp="1639597871">hListTargetPDSCHs.m</file>
+    <file component="5g" timestamp="1669287134">hReferenceGrid.m</file>
+    <file component="repository/spc" timestamp="1635412209">hNRReferenceWaveformGenerator.m</file>
+    <file component="5g" timestamp="1594144978">hPhaseNoisePoleZeroModel.m</file>
+    <file component="repository/spc" timestamp="1610725086">hSlotResources.m</file>
+    <file component="repository/spc" timestamp="1642795710">hRawEVM.m</file>
+    <file component="repository/spc" timestamp="1642795710">hEVM.m</file>
+    <file component="repository/spc" timestamp="1673644116">hChannelEstimateEVM3GPP.m</file>
+    <file component="5g" timestamp="1673644116">hNRFrequencyOffset.m</file>
+    <file component="5g" timestamp="1673644116">hNRDownlinkEVM.m</file>
+    <file component="5g" timestamp="1655742445">hNRIQImbalance.m</file>
+    <file component="5g" timestamp="1661754751">5G_NRDownlink_EVM_ProcessingChain.png</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUSCHSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex93923777</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDSCHSpecificPTRSSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex94148412</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GetCharacteristicInformationAboutTDLFadingChannelExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex94160544</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>PerformPolarEncodingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex94615583</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePRSSymbolsForMultipleResourcesInResourceSetExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex94867290</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>EstablishUnidirectionalRLCUMBearerInDLDirectionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex94996918</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+  </demoitem>
+  <demoitem>
+    <source>DownlinkControlProceduresExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex95033078</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1578593616">nr5gDLControlGrid.png</file>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat2ModulationSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95229407</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>TransmissionOverTDLChannelModelWithCustomDelayProfileExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95490665</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>Generate16QAMModulatedSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95978674</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDCCHIndicesForAllCandidatesAndAggregationLevelsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex95990787</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>DecodePUCCHFormat2SymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96064440</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NRFDDSchedulingPerformanceEvaluationExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96342415</metadata>
+    <thumbnail>data/NRSchedulingFDDExampleSchedulerThumbnail.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <product>wirelessnetwork</product>
+    <file component="5g" timestamp="1635289038">NRSchedulingFDDExampleSchedulerThumbnail.png</file>
+    <file component="5g" timestamp="1674153342">helperNRMetricsVisualizer.m</file>
+    <file component="5g" timestamp="1673604137">helperNRPhyLogger.m</file>
+    <file component="5g" timestamp="1667515744">helperNRSchedulingLogger.m</file>
+    <file component="5g" timestamp="1674138256">helperNRGridVisualizer.m</file>
+    <file component="5g" timestamp="1674138256">helperNRRLCLogger.m</file>
+    <file component="5g" timestamp="1674838391">NRFDDAppConfig.mat</file>
+    <file component="5g" timestamp="1674160004">NRFDDRLCChannelConfig.mat</file>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPUCCHBlockErrorRateExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96369873</metadata>
+    <thumbnail>html/NewRadioPUCCHBlockErrorRateExample_02.jpeg</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+    <file component="5g" timestamp="1651679944">hSkipWeakTimingOffset.m</file>
+  </demoitem>
+  <demoitem>
+    <source>PerformPUSCHScramblingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex96975199</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePTRSIndicesForCodebookBasedTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex97016561</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GenerateMACSubPDUForSDUPayloadExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex97860681</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePUCCHFormat3IndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex97947078</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>NewRadioPUSCHReferenceSignalsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex98530548</metadata>
+    <thumbnail>html/NewRadioPUSCHReferenceSignalsExample_05.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>UtilizeChannelModelReciprocityInDLAndULTransmissionExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99067638</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ResamplingFilterDesignInOFDMFunctionsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99318304</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ExtractPBCHSymbolsAndChannelEstimatesForDecodingExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99583053</metadata>
+    <thumbnail>html/ExtractPBCHSymbolsAndChannelEstimatesForDecodingExample_01.png</thumbnail>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>ConfigureTwoBandwidthPartsForTwoSCSCarriersExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99647961</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePhysicalBroadcastChannelSymbolsExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99779992</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+  <demoitem>
+    <source>GeneratePDSCHSymbolsAndIndicesExample</source>
+    <type>live</type>
+    <extension>mlx</extension>
+    <metadata>ex99910520</metadata>
+    <product>matlab</product>
+    <product>5g</product>
+  </demoitem>
+</demos>
