@@ -176,6 +176,81 @@ class SimulationUniform:
                 [k for k in busyness.keys() if busyness[k] == least_busy])
             return self.simulation.nodes[chosen_n]
 
+class SimulationLognormal(SimulationUniform):
+    """
+    This class derives the sojourn time cdf for a JSQ-PS vis simulation.
+    The simulation methodology is via Ciw (v.2.2.0).
+    """
+    def __init__(self, lambda_, mu, R, max_time, warmup, tracker=ciw.trackers.StateTracker(), ps_bar=True, nonzero=False):
+        """
+        Parameters:
+          mu: the service rate
+          lambda_: the external arrival rate
+          R: the number of parallel PS queues
+        Hyperparameters:
+          max_time: the amount of simulation time to run for
+          warmup: the amount of warmup and cooldown time to not collect results
+        """
+        self.lambda_ = lambda_
+        self.mu = mu
+        self.R = R
+        self.max_time = max_time
+        self.warmup = warmup
+        self.tracker = tracker
+        self.ps_bar = ps_bar
+
+        # Obtain parameters for the service time lognormal distribution
+        s = np.log(2)
+        m = np.log(1 / self.mu) - ((s ** 2) / 2)
+
+        self.N = ciw.create_network(
+            arrival_distributions=[
+                ciw.dists.Exponential(self.lambda_)] + [
+                ciw.dists.NoArrivals() for _ in range(self.R)],
+            service_distributions=[
+                ciw.dists.Deterministic(0)] + [
+                ciw.dists.Lognormal(mean=m, sd=s) for _ in range(self.R)],
+            number_of_servers=[float('inf') for _ in range(self.R + 1)],
+            routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
+        )
+
+class SimulationTriangular(SimulationUniform):
+    """
+    This class derives the sojourn time cdf for a JSQ-PS vis simulation.
+    The simulation methodology is via Ciw (v.2.2.0).
+    """
+    def __init__(self, lambda_, mu, R, max_time, warmup, tracker=ciw.trackers.StateTracker(), ps_bar=True, nonzero=False):
+        """
+        Parameters:
+          mu: the service rate
+          lambda_: the external arrival rate
+          R: the number of parallel PS queues
+        Hyperparameters:
+          max_time: the amount of simulation time to run for
+          warmup: the amount of warmup and cooldown time to not collect results
+        """
+        self.lambda_ = lambda_
+        self.mu = mu
+        self.R = R
+        self.max_time = max_time
+        self.warmup = warmup
+        self.tracker = tracker
+        self.ps_bar = ps_bar
+
+        # Obtain parameters for the service time triangular distribution
+        mode = 1 / self.mu
+        diff = (6 / (self.mu ** 2)) ** 0.5
+
+        self.N = ciw.create_network(
+            arrival_distributions=[
+                ciw.dists.Exponential(self.lambda_)] + [
+                ciw.dists.NoArrivals() for _ in range(self.R)],
+            service_distributions=[
+                ciw.dists.Deterministic(0)] + [
+                ciw.dists.Triangular(lower=mode-diff, mode=mode, upper=mode+diff) for _ in range(self.R)],
+            number_of_servers=[float('inf') for _ in range(self.R + 1)],
+            routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
+        )
 
 class SimulationDeterministic:
     """
