@@ -214,7 +214,7 @@ class SimulationLognormal(SimulationUniform):
             routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
         )
 
-class SimulationTriangular(SimulationUniform):
+class SimulationGamma(SimulationUniform):
     """
     This class derives the sojourn time cdf for a JSQ-PS vis simulation.
     The simulation methodology is via Ciw (v.2.2.0).
@@ -238,8 +238,8 @@ class SimulationTriangular(SimulationUniform):
         self.ps_bar = ps_bar
 
         # Obtain parameters for the service time triangular distribution
-        mode = 1 / self.mu
-        diff = (6 / (self.mu ** 2)) ** 0.5
+        alpha = 1 / 2
+        beta = 2 / self.mu
 
         self.N = ciw.create_network(
             arrival_distributions=[
@@ -247,7 +247,7 @@ class SimulationTriangular(SimulationUniform):
                 ciw.dists.NoArrivals() for _ in range(self.R)],
             service_distributions=[
                 ciw.dists.Deterministic(0)] + [
-                ciw.dists.Triangular(lower=mode-diff, mode=mode, upper=mode+diff) for _ in range(self.R)],
+                ciw.dists.Gamma(alpha=alpha, beta=beta) for _ in range(self.R)],
             number_of_servers=[float('inf') for _ in range(self.R + 1)],
             routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
         )

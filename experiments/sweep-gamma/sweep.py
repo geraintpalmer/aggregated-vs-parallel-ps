@@ -6,7 +6,7 @@ import pandas as pd
 import multiprocessing
 
 Rs = range(1, 11)
-rhos = np.linspace(0.01, 0.99, 99)
+rhos = np.linspace(0.01, 0.95, 95)
 
 def write_cdf(R, rho):
     max_sojourn_time = 182.32
@@ -26,6 +26,6 @@ def write_cdf(R, rho):
 
 
 if __name__ == '__main__':
-    pool = multiprocessing.Pool(35)
+    pool = multiprocessing.Pool(36)
     args = [(R, rho) for R in Rs for rho in rhos]
     pool.starmap(write_cdf, args)
