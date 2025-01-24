@@ -1,4 +1,4 @@
-def mu():
+def mu(decodeOnly=True):
     """
     Derive the service rate assuming 1 CPU
     The tasks done in remote driving involve
@@ -19,6 +19,6 @@ def mu():
     decoding_time = flow_decoding_time / video_fps
 
     # detecting signal on Intel Xeon [2] 0.37ms per frame
-    cnn_time = (0.37*1e-3)
+    cnn_time = 0 if decodeOnly else (0.37*1e-3)
 
     return 1 / (decoding_time + cnn_time) # 113 frames/sec = \mu
