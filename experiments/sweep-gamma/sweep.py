@@ -26,6 +26,6 @@ def write_cdf(R, rho):
 
 
 if __name__ == '__main__':
-    pool = multiprocessing.Pool(36)
+    pool = multiprocessing.Pool(38)
     args = [(R, rho) for R in Rs for rho in rhos]
     pool.starmap(write_cdf, args)

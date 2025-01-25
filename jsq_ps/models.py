@@ -238,8 +238,8 @@ class SimulationGamma(SimulationUniform):
         self.ps_bar = ps_bar
 
         # Obtain parameters for the service time triangular distribution
-        alpha = 1 / 2
-        beta = 2 / self.mu
+        shape = 1 / 2
+        scale = 2 / self.mu
 
         self.N = ciw.create_network(
             arrival_distributions=[
@@ -247,7 +247,7 @@ class SimulationGamma(SimulationUniform):
                 ciw.dists.NoArrivals() for _ in range(self.R)],
             service_distributions=[
                 ciw.dists.Deterministic(0)] + [
-                ciw.dists.Gamma(alpha=alpha, beta=beta) for _ in range(self.R)],
+                ciw.dists.Gamma(shape=shape, scale=scale) for _ in range(self.R)],
             number_of_servers=[float('inf') for _ in range(self.R + 1)],
             routing=[[0 for row in range(self.R+1)] for col in range(self.R+1)]
         )
